@@ -19,4 +19,4 @@ it is being pushed on.
 Button does not use other field to store whether 
 it is being pushed on.
 
-View style is to be used for tool and with Crystal icon theme.
+View style is to be used for tool and with Eclipse icon theme.
