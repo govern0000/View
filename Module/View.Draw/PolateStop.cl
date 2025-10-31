@@ -12,7 +12,7 @@ class PolateStop : Any
         this.Intern : extern.PolateStop_New();
         extern.PolateStop_CountSet(this.Intern, this.Count);
         extern.PolateStop_Init(this.Intern);
-        return true;        
+        return true;
     }
 
     maide prusate Bool Final()
