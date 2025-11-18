@@ -40,7 +40,7 @@ System.Entry
     EntryEntry Entry
 Text.Text:0.00.00
     TextAdd Add
-Type.Type:0.00.00
+View.Type:0.00.00
     Type Type
     TypeIndex Index
     TypeIndexList IndexList
@@ -70,6 +70,8 @@ View.Draw:0.00.00
     DrawInfra Infra
 View.View:0.00.00
     View View
+    Frame Frame
+    Screen Screen
     Button Button
     Mark Mark
     Radio Radio
@@ -80,9 +82,6 @@ View.View:0.00.00
     GridChild GridChild
     ViewCount Count
     ViewInfra Infra
-View.Frame:0.00.00
-    Frame Frame
-    Screen Screen
 
 [Export]
 
