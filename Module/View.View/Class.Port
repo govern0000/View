@@ -6,6 +6,11 @@ System.Infra
     Any Any
     Bool Bool
     Int Int
+    String String
+    Data Data
+    Intern Intern
+    Extern Extern
+    InternInfra InternInfra
     InfraInfra Infra
 System.List
     Array Array
