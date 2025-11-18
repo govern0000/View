@@ -1,7 +1,7 @@
 @echo off
 
-call Script\Module\MakeModule Draw
-call Script\Module\MakeModule Infra
-call Script\Module\MakeModule View
-call Script\Module\MakeModule Frame
-call Script\Module\MakeModule Demo
+call ..\Script\Module\Make View View.Draw
+call ..\Script\Module\Make View View.Type
+call ..\Script\Module\Make View View.Infra
+call ..\Script\Module\Make View View.View
+call ..\Script\Module\Make View View.Demo
