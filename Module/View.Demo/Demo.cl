@@ -42,7 +42,6 @@ class Demo : TextAdd
     field prusate Screen Screen { get { return data; } set { data : value; } }
     field prusate ThreadThis ThreadThis { get { return data; } set { data : value; } }
     field precate MathComp MathComp { get { return data; } set { data : value; } }
-    field private Stream MediaStream { get { return data; } set { data : value; } }
 
     maide prusate Bool Execute()
     {
