@@ -79,7 +79,7 @@ class Demo : TextAdd
         brush.Init();
 
         var DrawImage buttonImage;
-        buttonImage : this.DrawInfra.ImageCreateStorage("View.Demo-0.00.00.data/Demo/Icon.png");
+        buttonImage : this.DrawInfra.ImageCreateStorage("View.Demo-0.00.00/Data/Demo/Icon.png");
 
         this.View : new View;
         this.View.Init();
