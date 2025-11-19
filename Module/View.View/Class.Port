@@ -8,13 +8,19 @@ System.Infra
     Int Int
     String String
     Data Data
+    State State
+    Less Less
+    RefLess RefLess
     Intern Intern
     Extern Extern
     InternInfra InternInfra
     InfraInfra Infra
 System.List
     Array Array
+    Table Table
+    Entry Entry
     Iter Iter
+    TableIter TableIter
     ListInfra Infra
 System.Math
     Math Math
@@ -66,6 +72,16 @@ Rect
 Pos
 Size
 Count
+Comp
+Mod
+Field
+FieldState
+Event
+StateTable
+List
+ListMod
+ListIter
+ListState
 Infra
 
 [Storage]
