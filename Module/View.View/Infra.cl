@@ -156,7 +156,7 @@ class Infra : Any
     {
         var Int roundSize;
         roundSize : 18;
-        
+
         area.Pos.Col : area.Pos.Col + roundSize + 6 * 2;
         area.Size.Width : this.DrawInfra.BoundSub(area.Size.Width, roundSize + 6 * 2);
         return true;
