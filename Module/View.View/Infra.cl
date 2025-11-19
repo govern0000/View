@@ -50,12 +50,12 @@ class Infra : Any
 
     maide prusate Bool DrawRectAssign(var DrawRect dest, var DrawRect source)
     {
-        this.AssignDrawPosValue(dest.Pos, source.Pos);
+        this.DrawPosAssign(dest.Pos, source.Pos);
         this.AssignDrawSizeValue(dest.Size, source.Size);
         return true;
     }
 
-    maide prusate Bool AssignDrawPosValue(var DrawPos dest, var DrawPos source)
+    maide prusate Bool DrawPosAssign(var DrawPos dest, var DrawPos source)
     {
         dest.Col : source.Col;
         dest.Row : source.Row;
@@ -71,7 +71,7 @@ class Infra : Any
 
     maide prusate Bool StackPushChild(var Draw draw, var DrawRect stackRect, var DrawPos stackPos, var DrawRect rect, var DrawPos pos)
     {
-        this.AssignDrawPosValue(pos, rect.Pos);
+        this.DrawPosAssign(pos, rect.Pos);
 
         this.DrawInfra.BoundArea(rect, draw.Area);
 
@@ -81,9 +81,9 @@ class Infra : Any
 
         draw.AreaSet();
 
-        this.AssignDrawPosValue(stackPos, draw.Pos);
+        this.DrawPosAssign(stackPos, draw.Pos);
 
-        this.AssignDrawPosValue(draw.Pos, pos);
+        this.DrawPosAssign(draw.Pos, pos);
 
         draw.PosSet();
         return true;
@@ -91,7 +91,7 @@ class Infra : Any
 
     maide prusate Bool StackPopChild(var Draw draw, var DrawRect stackRect, var DrawPos stackPos)
     {
-        this.AssignDrawPosValue(draw.Pos, stackPos);
+        this.DrawPosAssign(draw.Pos, stackPos);
 
         draw.PosSet();
 
