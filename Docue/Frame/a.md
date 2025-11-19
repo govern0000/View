@@ -11,8 +11,8 @@ View frame is not partly or entirely occluded.
 View frame has Index event.
 View frame IndexEvent maide set fields in index any list that is from param.
 
-Class of the index any is Index class in View.Frame module.
-Class of the index any list is IndexList class in View.Frame module.
+Class of the index any is Index class in View.View module.
+Class of the index any list is IndexList class in View.View module.
 
 View frame IndexEvent is overide to set index that is present
 when Index alpha button is press.
