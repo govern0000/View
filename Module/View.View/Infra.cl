@@ -51,7 +51,7 @@ class Infra : Any
     maide prusate Bool DrawRectAssign(var DrawRect dest, var DrawRect source)
     {
         this.DrawPosAssign(dest.Pos, source.Pos);
-        this.AssignDrawSizeValue(dest.Size, source.Size);
+        this.DrawSizeAssign(dest.Size, source.Size);
         return true;
     }
 
@@ -62,7 +62,7 @@ class Infra : Any
         return true;
     }
 
-    maide prusate Bool AssignDrawSizeValue(var DrawSize dest, var DrawSize source)
+    maide prusate Bool DrawSizeAssign(var DrawSize dest, var DrawSize source)
     {
         dest.Width : source.Width;
         dest.Hegth : source.Hegth;
