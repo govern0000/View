@@ -279,7 +279,7 @@ class View : Comp
 
     maide prusate Bool ExecuteDraw(var Draw draw)
     {
-        this.ViewInfra.AssignDrawRectValue(this.Area, draw.Area);
+        this.ViewInfra.DrawRectAssign(this.Area, draw.Area);
 
         inf (~this.ValidDraw())
         {

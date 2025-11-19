@@ -136,14 +136,14 @@ class TypeA : Type
 
         inf (b)
         {
-            this.Demo.ViewInfra.AssignDrawRectValue(this.Demo.UpdateRect, this.Demo.ViewA.Area);
+            this.Demo.ViewInfra.DrawRectAssign(this.Demo.UpdateRect, this.Demo.ViewA.Area);
 
             this.Demo.Frame.Update(this.Demo.UpdateRect);
         }
 
         inf (ba)
         {
-            this.Demo.ViewInfra.AssignDrawRectValue(this.Demo.UpdateRect, this.Demo.ViewC.Area);
+            this.Demo.ViewInfra.DrawRectAssign(this.Demo.UpdateRect, this.Demo.ViewC.Area);
 
             this.Demo.Frame.Update(this.Demo.UpdateRect);
         }
