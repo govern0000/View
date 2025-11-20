@@ -18,7 +18,6 @@ System.List
 System.Math
     Math Math
     MathComp Comp
-    MathInfra Infra
 System.Text
     Text Text
 System.Stream
@@ -27,6 +26,8 @@ System.Storage
     Storage Storage
     StorageMode Mode
     StorageStatusList StatusList
+Math.Math:0.00.00
+    MathInfra Infra
 
 [Export]
 Draw
