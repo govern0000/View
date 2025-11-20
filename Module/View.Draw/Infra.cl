@@ -190,10 +190,10 @@ class Infra : Any
         b : this.RateColorComp(mathComp, color.Blue);
 
         var Int max;
-        max : this.MaxThree(r, g, b);
+        max : this.MathInfra.MaxThree(r, g, b);
 
         var Int min;
-        min : this.MinThree(r, g, b);
+        min : this.MathInfra.MinThree(r, g, b);
 
         var Int chroma;
         chroma : this.Math.Sub(max, min);
