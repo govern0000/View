@@ -147,7 +147,7 @@ class Infra : Any
 
         k : this.Math.Div(k, ka);
 
-        k : this.BoundValue(k, this.MathInt(mathComp, 0), this.MathInt(mathComp, 1));
+        k : this.MathInfra.BoundValue(k, this.MathInt(mathComp, 0), this.MathInt(mathComp, 1));
 
         return k;
     }
@@ -227,12 +227,12 @@ class Infra : Any
                     {
                         ka : this.Math.Add(ka, this.MathInt(mathComp, 6));
 
-                        ka : this.BoundValue(ka, this.MathInt(mathComp, 5), this.MathInt(mathComp, 6));
+                        ka : this.MathInfra.BoundValue(ka, this.MathInt(mathComp, 5), this.MathInt(mathComp, 6));
                     }
 
                     inf (~baa)
                     {
-                        ka : this.BoundValue(ka, zero, this.MathInt(mathComp, 1));
+                        ka : this.MathInfra.BoundValue(ka, zero, this.MathInt(mathComp, 1));
                     }
 
                     ba : true;
@@ -249,7 +249,7 @@ class Infra : Any
 
                     ka : this.Math.Add(ka, this.MathInt(mathComp, 2));
 
-                    ka : this.BoundValue(ka, this.MathInt(mathComp, 1), this.MathInt(mathComp, 3));
+                    ka : this.MathInfra.BoundValue(ka, this.MathInt(mathComp, 1), this.MathInt(mathComp, 3));
 
                     ba : true;
                 }
@@ -265,7 +265,7 @@ class Infra : Any
 
                     ka : this.Math.Add(ka, this.MathInt(mathComp, 4));
 
-                    ka : this.BoundValue(ka, this.MathInt(mathComp, 3), this.MathInt(mathComp, 5));
+                    ka : this.MathInfra.BoundValue(ka, this.MathInt(mathComp, 3), this.MathInt(mathComp, 5));
 
                     ba : true;
                 }
@@ -276,7 +276,7 @@ class Infra : Any
 
             ka : this.Math.Mul(ka, sixty);
 
-            ka : this.BoundValue(ka, zero, this.MathInt(mathComp, 360));
+            ka : this.MathInfra.BoundValue(ka, zero, this.MathInt(mathComp, 360));
 
             inf (ka = this.MathInt(mathComp, 360))
             {
@@ -301,7 +301,7 @@ class Infra : Any
             var Int kb;
             kb : this.Math.Div(chroma, value);
 
-            kb : this.BoundValue(kb, zero, this.MathInt(mathComp, 1));
+            kb : this.MathInfra.BoundValue(kb, zero, this.MathInt(mathComp, 1));
 
             alpha : kb;
         }
@@ -339,14 +339,14 @@ class Infra : Any
         var Int ka;
         ka : this.Math.Mul(value, alpha);
 
-        ka : this.BoundValue(ka, v0, v1);
+        ka : this.MathInfra.BoundValue(ka, v0, v1);
 
         var Int chroma;
         chroma : ka;
 
         ka : this.Math.Div(kind, this.MathInt(mathComp, 60));
 
-        ka : this.BoundValue(ka, v0, v6);
+        ka : this.MathInfra.BoundValue(ka, v0, v6);
 
         inf (ka = v6)
         {
@@ -366,15 +366,15 @@ class Infra : Any
 
         kb : this.Math.Abs(kb);
 
-        kb : this.BoundValue(kb, v0, v1);
+        kb : this.MathInfra.BoundValue(kb, v0, v1);
 
         kb : this.Math.Sub(v1, kb);
 
-        kb : this.BoundValue(kb, v0, v1);
+        kb : this.MathInfra.BoundValue(kb, v0, v1);
 
         kb : this.Math.Mul(kb, chroma);
 
-        kb : this.BoundValue(kb, v0, chroma);
+        kb : this.MathInfra.BoundValue(kb, v0, chroma);
 
         var Int x;
         x : kb;
@@ -428,7 +428,7 @@ class Infra : Any
         var Int min;
         min : this.Math.Sub(value, chroma);
 
-        min : this.BoundValue(min, v0, v1);
+        min : this.MathInfra.BoundValue(min, v0, v1);
 
         red : this.Math.Add(red, min);
 
@@ -436,11 +436,11 @@ class Infra : Any
 
         blue : this.Math.Add(blue, min);
 
-        red : this.BoundValue(red, v0, v1);
+        red : this.MathInfra.BoundValue(red, v0, v1);
 
-        green : this.BoundValue(green, v0, v1);
+        green : this.MathInfra.BoundValue(green, v0, v1);
 
-        blue : this.BoundValue(blue, v0, v1);
+        blue : this.MathInfra.BoundValue(blue, v0, v1);
 
         result.Red : red;
         result.Green : green;
@@ -475,9 +475,9 @@ class Infra : Any
             ka : this.Math.Sub(ka, kb);
         }
 
-        ka : this.BoundValue(ka, v0, v1);
+        ka : this.MathInfra.BoundValue(ka, v0, v1);
 
-        k : this.BoundValue(k, v0, v1);
+        k : this.MathInfra.BoundValue(k, v0, v1);
 
         chrome.Alpha : ka;
         chrome.Value : k;
@@ -496,10 +496,10 @@ class Infra : Any
 
     maide prusate Bool ColorMix(var Color result, var Color lite, var Color rite)
     {
-        result.Alpha : this.Mean(lite.Alpha, rite.Alpha);
-        result.Red : this.Mean(lite.Red, rite.Red);
-        result.Green : this.Mean(lite.Green, rite.Green);
-        result.Blue : this.Mean(lite.Blue, rite.Blue);
+        result.Alpha : this.MathInfra.Mean(lite.Alpha, rite.Alpha);
+        result.Red : this.MathInfra.Mean(lite.Red, rite.Red);
+        result.Green : this.MathInfra.Mean(lite.Green, rite.Green);
+        result.Blue : this.MathInfra.Mean(lite.Blue, rite.Blue);
         return true;
     }
 
