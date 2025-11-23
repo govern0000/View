@@ -8,6 +8,7 @@ class Demo : TextAdd
         this.ViewInfra : share ViewInfra;
         this.Math : share Math;
         this.Console : share Console;
+        this.ThreadThis : share ThreadThis;
         this.CompList : share DrawCompList;
         this.BrushKindList : share DrawBrushKindList;
         this.SlashLineList : share DrawSlashLineList;
@@ -45,11 +46,6 @@ class Demo : TextAdd
 
     maide prusate Bool Execute()
     {
-        var ThreadThis varThis;
-        varThis : new ThreadThis;
-        varThis.Init();
-        this.ThreadThis : varThis;
-
         this.MathComp : new MathComp;
         this.MathComp.Init();
 
@@ -114,7 +110,7 @@ class Demo : TextAdd
         this.Frame.Shown : true;
 
         var Thread thread;
-        thread : varThis.Thread;
+        thread : this.ThreadThis.Thread;
 
         thread.ExecuteMain();
 
