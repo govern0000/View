@@ -63,7 +63,7 @@ class IndexList : Any
         this.SignLine : this.AddSignIndex("_");
         this.SignClaim : this.AddSignIndex("!");
         this.SignQuest : this.AddSignIndex("?");
-        this.SignBackTick : this.AddSignIndex("`");
+        this.SignGrave : this.AddSignIndex("`");
         this.SignAte : this.AddSignIndex("@");
         this.SignDollar : this.AddSignIndex("$");
         this.SignPercent : this.AddSignIndex("%");
@@ -128,7 +128,7 @@ class IndexList : Any
     field prusate Index Digit7 { get { return data; } set { data : value; } }
     field prusate Index Digit8 { get { return data; } set { data : value; } }
     field prusate Index Digit9 { get { return data; } set { data : value; } }
-    field prusate Index SignBackTick { get { return data; } set { data : value; } }
+    field prusate Index SignGrave { get { return data; } set { data : value; } }
     field prusate Index SignNot { get { return data; } set { data : value; } }
     field prusate Index SignClaim { get { return data; } set { data : value; } }
     field prusate Index SignAte { get { return data; } set { data : value; } }
