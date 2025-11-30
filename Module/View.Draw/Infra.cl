@@ -37,6 +37,9 @@ class Infra : Any
         this.SlashBlack : this.SlashCreate(this.BrushCreate(blackColor), k);
         this.SlashWhite : this.SlashCreate(this.BrushCreate(whiteColor), k);
         this.SlashZero : this.SlashCreate(this.BrushCreate(zeroColor), k);
+
+        this.FontAriaName : "Noto Sans";
+        this.FontMonoName : "Cascadia Mono";
         return true;
     }
 
@@ -46,6 +49,8 @@ class Infra : Any
     field prusate Slash SlashBlack { get { return data; } set { data : value; } }
     field prusate Slash SlashWhite { get { return data; } set { data : value; } }
     field prusate Slash SlashZero { get { return data; } set { data : value; } }
+    field prusate String FontAriaName { get { return data; } set { data : value; } }
+    field prusate String FontMonoName { get { return data; } set { data : value; } }
     field precate MathInfra MathInfra { get { return data; } set { data : value; } }
     field precate Math Math { get { return data; } set { data : value; } }
     field precate StorageStatusList StorageStatusList { get { return data; } set { data : value; } }
