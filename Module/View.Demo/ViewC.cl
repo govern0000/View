@@ -83,7 +83,7 @@ class ViewC : View
         text.Dest.Size.Width : 80;
         text.Dest.Size.Hegth : 60;
         text.Value : this.Demo.TextCreate("MMMMH k m5 #");
-        text.Font : this.Demo.FontMono;
+        text.Font : this.ViewInfra.PaleteDefault.FontMono;
 
         this.Button : new Button;
         this.Button.Palete : this.ViewInfra.PaleteDefault;
@@ -215,7 +215,7 @@ class ViewC : View
     {
         var DrawFont a;
         a : new DrawFont;
-        a.Name : this.Demo.FontMonoName;
+        a.Name : this.Demo.DrawInfra.FontMonoName;
         a.Size : 20;
         a.Strong : 400;
         a.Tenden : true;
