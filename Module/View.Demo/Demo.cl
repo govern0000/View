@@ -268,7 +268,7 @@ class Demo : TextAdd
         var String kb;
         kb : this.StringComp.CreateChar(this.Char("M"), 1024);
 
-        draw.Font : this.ViewInfra.PaleteDefault.FontMono;
+        draw.Font : this.Demo.FontMono;
 
         draw.Line : this.DrawInfra.SlashBlack;
 
