@@ -279,10 +279,10 @@ class ViewC : View
     }
 
     field prusate Demo Demo { get { return data; } set { data : value; } }
-    # field prusate Button Button { get { return data; } set { data : value; } }
-    # field prusate Mark Mark { get { return data; } set { data : value; } }
-    # field prusate Radio Radio { get { return data; } set { data : value; } }
-    # field prusate Select Select { get { return data; } set { data : value; } }
+    field prusate Button Button { get { return data; } set { data : value; } }
+    field prusate Mark Mark { get { return data; } set { data : value; } }
+    field prusate Radio Radio { get { return data; } set { data : value; } }
+    field prusate Select Select { get { return data; } set { data : value; } }
     field prusate DrawImage ButtonImage { get { return data; } set { data : value; } }
     field prusate DrawRect EllipseRect { get { return data; } set { data : value; } }
     field prusate DrawBrush EllipseBrush { get { return data; } set { data : value; } }
