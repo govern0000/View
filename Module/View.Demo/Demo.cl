@@ -18,9 +18,6 @@ class Demo : TextAdd
         this.PolateSpreadList : share DrawPolateSpreadList;
         this.AlignList : share DrawAlignList;
         this.Screen : share Screen;
-
-        this.FontAriaName : "Noto Sans";
-        this.FontMonoName : "Cascadia Mono";
         return true;
     }
 
@@ -30,10 +27,6 @@ class Demo : TextAdd
     field prusate ViewC ViewC { get { return data; } set { data : value; } }
     field prusate DrawRect UpdateRect { get { return data; } set { data : value; } }
     field prusate DrawImage ThreadDrawImage { get { return data; } set { data : value; } }
-    field prusate String FontAriaName { get { return data; } set { data : value; } }
-    field prusate String FontMonoName { get { return data; } set { data : value; } }
-    field prusate DrawFont FontAria { get { return data; } set { data : value; } }
-    field prusate DrawFont FontMono { get { return data; } set { data : value; } }
     field prusate MathInfra MathInfra { get { return data; } set { data : value; } }
     field prusate DrawInfra DrawInfra { get { return data; } set { data : value; } }
     field prusate ViewInfra ViewInfra { get { return data; } set { data : value; } }
@@ -55,9 +48,6 @@ class Demo : TextAdd
     {
         this.MathComp : new MathComp;
         this.MathComp.Init();
-
-        this.FontAria : this.DrawInfra.FontCreate(this.FontAriaName, 10, 400, false, false, false, false);
-        this.FontMono : this.DrawInfra.FontCreate(this.FontMonoName, 10, 400, false, false, false, false);
 
         this.ThreadDrawImage : this.ThreadDrawImageCreate();
 
@@ -268,7 +258,7 @@ class Demo : TextAdd
         var String kb;
         kb : this.StringComp.CreateChar(this.Char("M"), 1024);
 
-        draw.Font : this.Demo.FontMono;
+        draw.Font : this.ViewInfra.PaleteDefault.FontMono;
 
         draw.Line : this.DrawInfra.SlashBlack;
 
