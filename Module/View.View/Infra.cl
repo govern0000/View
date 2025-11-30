@@ -6,27 +6,27 @@ class Infra : Any
         this.MathInfra : share MathInfra;
         this.DrawInfra : share DrawInfra;
 
-        # this.PaleteDefault : this.CreatePaleteDefault();
+        this.PaleteDefault : this.CreatePaleteDefault();
         return true;
     }
 
-    # maide precate Palete CreatePaleteDefault()
-    # {
-    #     var Palete a;
-    #     a : new Palete;
-    #     a.Init();
-    #     a.Base : this.DrawInfra.SlashCreate(this.DrawInfra.BrushCreate(this.DrawInfra.ColorCreate(0hff, 240, 240, 240)), this.DrawInfra.SlashZero.Size);
-    #     a.Back : this.DrawInfra.SlashCreate(this.DrawInfra.BrushCreate(this.DrawInfra.ColorCreate(0hff, 231, 231, 231)), this.DrawInfra.SlashZero.Size);
-    #     a.Bord : this.DrawInfra.SlashCreate(this.DrawInfra.BrushCreate(this.DrawInfra.ColorCreate(0hff, 222, 222, 222)), this.DrawInfra.SlashZero.Size);
-    #     a.Fore : this.DrawInfra.SlashBlack;
-    #     a.Lite : this.DrawInfra.SlashCreate(this.DrawInfra.BrushCreate(this.DrawInfra.ColorCreate(0hff, 0, 200, 200)), this.DrawInfra.SlashZero.Size);
-    #     a.FontAria : this.DrawInfra.FontCreate(this.DrawInfra.FontAriaName, 10, 400, false, false, false, false);
-    #     a.FontMono : this.DrawInfra.FontCreate(this.DrawInfra.FontMonoName, 10, 400, false, false, false, false);
-    #     a.Form : this.DrawInfra.FormCreate();
-    #     return a;
-    # }
+    maide precate Palete CreatePaleteDefault()
+    {
+        var Palete a;
+        a : new Palete;
+        a.Init();
+        a.Base : this.DrawInfra.SlashCreate(this.DrawInfra.BrushCreate(this.DrawInfra.ColorCreate(0hff, 240, 240, 240)), this.DrawInfra.SlashZero.Size);
+        a.Back : this.DrawInfra.SlashCreate(this.DrawInfra.BrushCreate(this.DrawInfra.ColorCreate(0hff, 231, 231, 231)), this.DrawInfra.SlashZero.Size);
+        a.Bord : this.DrawInfra.SlashCreate(this.DrawInfra.BrushCreate(this.DrawInfra.ColorCreate(0hff, 222, 222, 222)), this.DrawInfra.SlashZero.Size);
+        a.Fore : this.DrawInfra.SlashBlack;
+        a.Lite : this.DrawInfra.SlashCreate(this.DrawInfra.BrushCreate(this.DrawInfra.ColorCreate(0hff, 0, 200, 200)), this.DrawInfra.SlashZero.Size);
+        a.FontAria : this.DrawInfra.FontCreate(this.DrawInfra.FontAriaName, 10, 400, false, false, false, false);
+        a.FontMono : this.DrawInfra.FontCreate(this.DrawInfra.FontMonoName, 10, 400, false, false, false, false);
+        a.Form : this.DrawInfra.FormCreate();
+        return a;
+    }
 
-    # field prusate Palete PaleteDefault { get { return data; } set { data : value; } }
+    field prusate Palete PaleteDefault { get { return data; } set { data : value; } }
     field precate MathInfra MathInfra { get { return data; } set { data : value; } }
     field precate DrawInfra DrawInfra { get { return data; } set { data : value; } }
 
