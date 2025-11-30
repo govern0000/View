@@ -18,6 +18,9 @@ class Demo : TextAdd
         this.PolateSpreadList : share DrawPolateSpreadList;
         this.AlignList : share DrawAlignList;
         this.Screen : share Screen;
+
+        this.FontAriaName : "Noto Sans";
+        this.FontMonoName : "Cascadia Mono";
         return true;
     }
 
@@ -27,6 +30,8 @@ class Demo : TextAdd
     field prusate ViewC ViewC { get { return data; } set { data : value; } }
     field prusate DrawRect UpdateRect { get { return data; } set { data : value; } }
     field prusate DrawImage ThreadDrawImage { get { return data; } set { data : value; } }
+    field prusate String FontAriaName { get { return data; } set { data : value; } }
+    field prusate String FontMonoName { get { return data; } set { data : value; } }
     field prusate MathInfra MathInfra { get { return data; } set { data : value; } }
     field prusate DrawInfra DrawInfra { get { return data; } set { data : value; } }
     field prusate ViewInfra ViewInfra { get { return data; } set { data : value; } }
