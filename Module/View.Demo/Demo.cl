@@ -32,6 +32,8 @@ class Demo : TextAdd
     field prusate DrawImage ThreadDrawImage { get { return data; } set { data : value; } }
     field prusate String FontAriaName { get { return data; } set { data : value; } }
     field prusate String FontMonoName { get { return data; } set { data : value; } }
+    field prusate DrawFont FontAria { get { return data; } set { data : value; } }
+    field prusate DrawFont FontMono { get { return data; } set { data : value; } }
     field prusate MathInfra MathInfra { get { return data; } set { data : value; } }
     field prusate DrawInfra DrawInfra { get { return data; } set { data : value; } }
     field prusate ViewInfra ViewInfra { get { return data; } set { data : value; } }
@@ -53,6 +55,9 @@ class Demo : TextAdd
     {
         this.MathComp : new MathComp;
         this.MathComp.Init();
+
+        this.FontAria : this.DrawInfra.FontCreate(this.FontAriaName, 10, 400, false, false, false, false);
+        this.FontMono : this.DrawInfra.FontCreate(this.FontMonoName, 10, 400, false, false, false, false);
 
         this.ThreadDrawImage : this.ThreadDrawImageCreate();
 
