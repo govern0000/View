@@ -86,7 +86,7 @@ class ViewC : View
     {
         var DrawFont a;
         a : new DrawFont;
-        a.Name : this.Demo.DrawInfra.FontMonoName;
+        a.Name : "Cascadia Mono";
         a.Size : 20;
         a.Strong : 400;
         a.Tenden : true;
