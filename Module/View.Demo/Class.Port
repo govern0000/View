@@ -72,12 +72,6 @@ View.View:0.00.00
     View View
     Frame Frame
     Screen Screen
-    Button Button
-    Mark Mark
-    Radio Radio
-    Image Image
-    Text Text
-    Select Select
     Grid Grid
     GridChild GridChild
     ViewCount Count
