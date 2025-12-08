@@ -2,7 +2,6 @@
 /Out
 bin/
 obj/
-*.jpg
 *.png
 *.bmp
 *.wav
