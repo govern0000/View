@@ -85,7 +85,7 @@ class ThreadState : State
 
         var DrawFont font;
         font : new DrawFont;
-        font.Name : this.Demo.DrawInfra.FontAriaName;
+        font.Name : "Noto Sans";
         font.Size : 38;
         font.Strong : 700;
         font.Tenden : false;
