@@ -52,72 +52,6 @@ class ViewC : View
         this.Font : this.FontCreate();
         this.Text : textA;
         this.TextSlash : this.TextSlashCreate();
-
-        var Image image;
-        image : new Image;
-        image.Init();
-        image.Pos.Col : 0;
-        image.Pos.Row : 0;
-        image.Size.Width : 16;
-        image.Size.Hegth : 16;
-        image.Dest.Pos.Col : 0;
-        image.Dest.Pos.Row : 0;
-        image.Dest.Size.Width : 16;
-        image.Dest.Size.Hegth : 16;
-        image.Source.Pos.Col : 0;
-        image.Source.Pos.Row : 0;
-        image.Source.Size.Width : 16;
-        image.Source.Size.Hegth : 16;
-        image.Value : this.ButtonImage;
-
-        var Text text;
-        text : new Text;
-        text.Palete : this.ViewInfra.PaleteDefault;
-        text.Init();
-        text.Pos.Col : 0;
-        text.Pos.Row : 0;
-        text.Size.Width : 80;
-        text.Size.Hegth : 60;
-        text.Dest.Pos.Col : 0;
-        text.Dest.Pos.Row : 0;
-        text.Dest.Size.Width : 80;
-        text.Dest.Size.Hegth : 60;
-        text.Value : this.Demo.TextCreate("MMMMH k m5 #");
-        text.Font : this.ViewInfra.PaleteDefault.FontMono;
-
-        this.Button : new Button;
-        this.Button.Palete : this.ViewInfra.PaleteDefault;
-        this.Button.Init();
-        this.Button.Pos.Col : 20;
-        this.Button.Pos.Row : 20;
-        this.Button.Size.Width : 100;
-        this.Button.Size.Hegth : 60;
-        this.Button.Child : image;
-
-        this.Mark : new Mark;
-        this.Mark.Palete : this.ViewInfra.PaleteDefault;
-        this.Mark.Init();
-        this.Mark.Pos.Col : 20;
-        this.Mark.Pos.Row : 20;
-        this.Mark.Size.Width : 100;
-        this.Mark.Size.Hegth : 60;
-        this.Mark.Child : text;
-
-        this.Radio : new Radio;
-        this.Radio.Palete : this.ViewInfra.PaleteDefault;
-        this.Radio.Init();
-        this.Radio.Pos.Col : 120;
-        this.Radio.Pos.Row : 20;
-        this.Radio.Size.Width : 100;
-        this.Radio.Size.Hegth : 60;
-
-        this.Select : new Select;
-        this.Select.Palete : this.ViewInfra.PaleteDefault;
-        this.Select.Init();
-        this.Select.Pos.Col : 20;
-        this.Select.Pos.Row : 80;
-        this.Select.Size.Width : 100;
-        this.Select.Size.Hegth : 60;
         return true;
     }
 
@@ -216,11 +150,6 @@ class ViewC : View
     }
 
     field prusate Demo Demo { get { return data; } set { data : value; } }
-    field prusate Button Button { get { return data; } set { data : value; } }
-    field prusate Mark Mark { get { return data; } set { data : value; } }
-    field prusate Radio Radio { get { return data; } set { data : value; } }
-    field prusate Select Select { get { return data; } set { data : value; } }
-    field prusate DrawImage ButtonImage { get { return data; } set { data : value; } }
     field prusate DrawRect EllipseRect { get { return data; } set { data : value; } }
     field prusate DrawBrush EllipseBrush { get { return data; } set { data : value; } }
     field prusate DrawFont Font { get { return data; } set { data : value; } }
