@@ -118,69 +118,6 @@ class ViewC : View
         this.Select.Pos.Row : 80;
         this.Select.Size.Width : 100;
         this.Select.Size.Hegth : 60;
-
-        var Grid grid;
-        grid : new Grid;
-        grid.Init();
-        grid.Pos.Col : 200;
-        grid.Pos.Row : 100;
-        grid.Size.Width : 300;
-        grid.Size.Hegth : 600;
-        grid.Back : this.ViewInfra.PaleteDefault.Base.Brush;
-
-        var ViewCount colA;
-        colA : new ViewCount;
-        colA.Init();
-        colA.Value : 300;
-        var ViewCount rowA;
-        rowA : new ViewCount;
-        rowA.Init();
-        rowA.Value : 150;
-        var ViewCount rowB;
-        rowB : new ViewCount;
-        rowB.Init();
-        rowB.Value : 150;
-        
-        var GridChild childA;
-        childA : new GridChild;
-        childA.Init();
-        childA.View : this.Button;
-        childA.Rect.Size.Width : 1;
-        childA.Rect.Size.Hegth : 1;
-
-        var GridChild childB;
-        childB : new GridChild;
-        childB.Init();
-        childB.View : this.Mark;
-        childB.Rect.Pos.Row : 1;
-        childB.Rect.Size.Width : 1;
-        childB.Rect.Size.Hegth : 1;
-
-        var GridChild childC;
-        childC : new GridChild;
-        childC.Init();
-        childC.View : this.Radio;
-        childC.Rect.Pos.Row : 1;
-        childC.Rect.Size.Width : 1;
-        childC.Rect.Size.Hegth : 1;
-
-        var GridChild childD;
-        childD : new GridChild;
-        childD.Init();
-        childD.View : this.Select;
-        childD.Rect.Pos.Row : 1;
-        childD.Rect.Size.Width : 1;
-        childD.Rect.Size.Hegth : 1;
-
-        grid.Col.Add(colA);
-        grid.Row.Add(rowA);
-        grid.Row.Add(rowB);
-        grid.ChildList.Add(childA);
-        grid.ChildList.Add(childB);
-        grid.ChildList.Add(childC);
-        grid.ChildList.Add(childD);
-
-        this.Child : grid;
         return true;
     }
 
