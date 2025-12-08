@@ -227,6 +227,9 @@ class Demo : TextAdd
         var DrawImage image;
         image : this.DrawInfra.ImageCreateSize(this.DrawInfra.SizeCreate(10000, 40));
 
+        var DrawFont font;
+        font : this.DrawInfra.FontCreate("Cascadia Mono", 10, 400, false, false, false, false);
+
         var Draw draw;
         draw : new Draw;
         draw.Init();
@@ -252,7 +255,7 @@ class Demo : TextAdd
         var String kb;
         kb : this.StringComp.CreateChar(this.Char("M"), 1024);
 
-        draw.Font : "Cascadia Mono";
+        draw.Font : font;
 
         draw.Line : this.DrawInfra.SlashBlack;
 
@@ -267,6 +270,8 @@ class Demo : TextAdd
         draw.End();
 
         draw.Final();
+
+        font.Final();
 
         image.Final();
 
