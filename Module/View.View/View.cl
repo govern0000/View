@@ -16,7 +16,6 @@ class View : Comp
         this.Size : this.CreateSize();
         this.Back : this.CreateBack();
         this.Shown : true;
-        this.Focus : false;
 
         this.Area : this.CreateArea();
 
