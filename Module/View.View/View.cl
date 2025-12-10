@@ -11,7 +11,6 @@ class View : Comp
         this.BackField : this.CreateBackField();
         this.ShownField : this.CreateShownField();
         this.ChildField : this.CreateChildField();
-        this.FocusField : this.CreateFocusField();
 
         this.Pos : this.CreatePos();
         this.Size : this.CreateSize();
@@ -54,11 +53,6 @@ class View : Comp
     }
 
     maide precate Field CreateChildField()
-    {
-        return this.ViewInfra.FieldCreate(this);
-    }
-
-    maide precate Field CreateFocusField()
     {
         return this.ViewInfra.FieldCreate(this);
     }
@@ -248,26 +242,6 @@ class View : Comp
     maide precate Bool ModChild(var Mod mod)
     {
         this.Event(this.ChildField);
-        return true;
-    }
-
-    field prusate Field FocusField { get { return data; } set { data : value; } }
-
-    field prusate Bool Focus
-    {
-        get
-        {
-            return cast Bool(this.FocusField.GetAny());
-        }
-        set
-        {
-            this.FocusField.SetAny(value);
-        }
-    }
-
-    maide precate Bool ModFocus(var Mod mod)
-    {
-        this.Event(this.FocusField);
         return true;
     }
 
