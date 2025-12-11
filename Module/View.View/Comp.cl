@@ -4,6 +4,7 @@ class Comp : Any
     {
         base.Init();
         this.MathInfra : share MathInfra;
+        this.ViewInfra : share ViewInfra;
         this.Math : share Math;
 
         this.MathComp : this.CreateMathComp();
@@ -39,6 +40,7 @@ class Comp : Any
     field prusate Event ModEvent { get { return data; } set { data : value; } }
     field prusate Mod ModArg { get { return data; } set { data : value; } }
     field precate MathInfra MathInfra { get { return data; } set { data : value; } }
+    field precate ViewInfra ViewInfra { get { return data; } set { data : value; } }
     field precate Math Math { get { return data; } set { data : value; } }
     field precate MathComp MathComp { get { return data; } set { data : value; } }
 
