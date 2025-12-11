@@ -10,8 +10,6 @@ System.Infra
     Intern Intern
     Extern Extern
     InternInfra InternInfra
-System.Text
-    TextText Text
 View.Draw:0.00.00
     Draw Draw
     DrawRect Rect
