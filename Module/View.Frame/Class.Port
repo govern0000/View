@@ -1,0 +1,28 @@
+[Module]
+View.Frame:0.00.00
+
+[Import]
+System.Infra
+    Any Any
+    Bool Bool
+    Int Int
+    String String
+    Intern Intern
+    Extern Extern
+    InternInfra InternInfra
+System.Text
+    TextText Text
+View.Draw:0.00.00
+    Draw Draw
+    DrawRect Rect
+    DrawPos Pos
+    DrawSize Size
+    DrawInfra Infra
+
+[Export]
+Frame
+Screen
+
+[Storage]
+
+[Entry]
