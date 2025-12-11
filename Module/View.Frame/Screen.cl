@@ -12,22 +12,22 @@ class Screen : Any
         var Int sizeK;
         sizeK : extern.Screen_SizeGet(0);
 
-        var Int sizeWed;
-        var Int sizeHet;
-        sizeWed : extern.Size_WidthGet(sizeK);
-        sizeHet : extern.Size_HegthGet(sizeK);
+        var Int sizeWidth;
+        var Int sizeHegth;
+        sizeWidth : extern.Size_WidthGet(sizeK);
+        sizeHegth : extern.Size_HegthGet(sizeK);
 
-        this.Size : this.DrawInfra.SizeCreate(sizeWed, sizeHet);
+        this.Size : this.DrawInfra.SizeCreate(sizeWidth, sizeHegth);
 
         var Int dimendK;
         dimendK : extern.Screen_DimendGet(0);
 
-        var Int dimendWed;
-        var Int dimendHet;
-        dimendWed : extern.Size_WidthGet(dimendK);
-        dimendHet : extern.Size_HegthGet(dimendK);
+        var Int dimendWidth;
+        var Int dimendHegth;
+        dimendWidth : extern.Size_WidthGet(dimendK);
+        dimendHegth : extern.Size_HegthGet(dimendK);
 
-        this.Dimend : this.DrawInfra.SizeCreate(dimendWed, dimendHet);
+        this.Dimend : this.DrawInfra.SizeCreate(dimendWidth, dimendHegth);
 
         return true;
     }
