@@ -75,7 +75,6 @@ class Frame : Any
         this.InternInfra : share InternInfra;
         this.MathInfra : share MathInfra;
         this.DrawInfra : share DrawInfra;
-        this.ViewInfra : share Infra;
         this.Math : share Math;
 
         this.MathComp : this.CreateMathComp();
@@ -197,7 +196,6 @@ class Frame : Any
     field private InternInfra InternInfra { get { return data; } set { data : value; } }
     field precate MathInfra MathInfra { get { return data; } set { data : value; } }
     field precate DrawInfra DrawInfra { get { return data; } set { data : value; } }
-    field precate Infra ViewInfra { get { return data; } set { data : value; } }
     field precate Math Math { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
     field private Int InternTitle { get { return data; } set { data : value; } }
