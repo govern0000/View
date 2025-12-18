@@ -87,30 +87,8 @@ class Frame : Any
         return a;
     }
 
-    maide precate Draw CreateDraw()
-    {
-        var Screen screen;
-        screen : share Screen;
-
-        var Draw a;
-        a : new Draw;
-        a.Init();
-        a.Out : this.Out;
-        a.Size.Width : screen.Size.Width;
-        a.Size.Hegth : screen.Size.Hegth;
-        a.SizeSet();
-        return a;
-    }
-
-    maide precate Bool FinalDraw(var Draw a)
-    {
-        a.Final();
-        return true;
-    }
-
     field prusate String Title { get { return data; } set { data : value; } }
     field prusate Any Out { get { return data; } set { data : value; } }
-    field precate Draw Draw { get { return data; } set { data : value; } }
 
     field prusate Bool Shown
     {
