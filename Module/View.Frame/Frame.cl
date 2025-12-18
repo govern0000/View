@@ -5,65 +5,16 @@ class Frame : Any
         var Bool b;
         b : ~(value = 0);
 
-        var Bool ba;
-        ba : index = 0h01000022;
+        var Int indexK;
+        indexK : this.InternInfra.TypeIndexFromInternIndex(index);
 
-        inf (ba)
-        {
-            inf (~(this.TypeIndexSystem = b))
-            {
-                this.TypeIndexSystem : b;
-
-                this.Update(this.Draw.Area);
-            }
-        }
-
-        inf (~ba)
-        {
-            inf (this.TypeIndexSystem)
-            {
-                inf (index = 0h01000020)
-                {
-                    inf (~(this.TypeIndexSystemSpace = b))
-                    {
-                        this.TypeIndexSystemSpace : b;
-
-                        inf (this.TypeIndexSystemSpace)
-                        {
-                            this.IndexEvent(this.IndexList);
-                        }
-
-                        this.Update(this.Draw.Area);
-                    }
-                }
-            }
-
-            inf (~this.TypeIndexSystem)
-            {
-                var Int indexK;
-                indexK : this.InternInfra.TypeIndexFromInternIndex(index);
-
-                this.TypeEvent(indexK, b);
-            }
-        }
+        this.TypeEvent(indexK, b);
         return true;
     }
 
     maide private Bool PrivateDrawEvent()
     {
-        var Draw draw;
-        draw : this.Draw;
-
-        draw.Start();
-
         this.DrawEvent();
-
-        inf (this.TypeIndexSystem & this.TypeIndexSystemSpace)
-        {
-            this.IndexDraw();
-        }
-
-        draw.End();
         return true;
     }
 
