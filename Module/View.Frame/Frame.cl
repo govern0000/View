@@ -61,8 +61,6 @@ class Frame : Any
 
     maide prusate Bool Final()
     {
-        this.IndexBrushBack.Final();
-
         this.FinalDraw(this.Draw);
 
         var Extern extern;
