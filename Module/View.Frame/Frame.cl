@@ -54,15 +54,11 @@ class Frame : Any
         extern.Frame_DrawStateSet(this.Intern, this.InternDrawState);
 
         this.Out : extern.Frame_Out(this.Intern);
-
-        this.Draw : this.CreateDraw();
         return true;
     }
 
     maide prusate Bool Final()
     {
-        this.FinalDraw(this.Draw);
-
         var Extern extern;
         extern : this.Extern;
 
