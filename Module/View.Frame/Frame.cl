@@ -56,12 +56,6 @@ class Frame : Any
         this.Out : extern.Frame_Out(this.Intern);
 
         this.Draw : this.CreateDraw();
-
-        this.IndexList : new IndexList;
-        this.IndexList.Init();
-
-        this.IndexBrushBack : this.DrawInfra.BrushCreate(this.DrawInfra.ColorCreate(0h80, 0, 0, 0));
-        this.IndexRectBack : this.DrawInfra.RectCreate(0, 0, 0, 0);
         return true;
     }
 
@@ -153,11 +147,6 @@ class Frame : Any
     field private Int InternUpdateRect { get { return data; } set { data : value; } }
     field private Int InternDrawState { get { return data; } set { data : value; } }
     field private Int InternTypeState { get { return data; } set { data : value; } }
-    field private IndexList IndexList { get { return data; } set { data : value; } }
-    field private Bool TypeIndexSystem { get { return data; } set { data : value; } }
-    field private Bool TypeIndexSystemSpace { get { return data; } set { data : value; } }
-    field private DrawBrush IndexBrushBack { get { return data; } set { data : value; } }
-    field private DrawRect IndexRectBack { get { return data; } set { data : value; } }
 
     maide prusate Bool TitleSet()
     {
