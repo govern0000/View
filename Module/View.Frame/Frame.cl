@@ -24,11 +24,7 @@ class Frame : Any
         this.InternIntern : share Intern;
         this.Extern : share Extern;
         this.InternInfra : share InternInfra;
-        this.MathInfra : share MathInfra;
         this.DrawInfra : share DrawInfra;
-        this.Math : share Math;
-
-        this.MathComp : this.CreateMathComp();
 
         var Int ka;
         var Int kb;
@@ -71,14 +67,6 @@ class Frame : Any
 
         this.InternInfra.StateDelete(this.InternTypeState);
         return true;
-    }
-
-    maide precate MathComp CreateMathComp()
-    {
-        var MathComp a;
-        a : new MathComp;
-        a.Init();
-        return a;
     }
 
     field prusate String Title { get { return data; } set { data : value; } }
