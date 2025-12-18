@@ -24,7 +24,6 @@ class Frame : Any
         this.InternIntern : share Intern;
         this.Extern : share Extern;
         this.InternInfra : share InternInfra;
-        this.DrawInfra : share DrawInfra;
 
         var Int ka;
         var Int kb;
@@ -93,7 +92,6 @@ class Frame : Any
     field private Intern InternIntern { get { return data; } set { data : value; } }
     field private Extern Extern { get { return data; } set { data : value; } }
     field private InternInfra InternInfra { get { return data; } set { data : value; } }
-    field precate DrawInfra DrawInfra { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
     field private Int InternTitle { get { return data; } set { data : value; } }
     field private Int InternUpdateRect { get { return data; } set { data : value; } }
