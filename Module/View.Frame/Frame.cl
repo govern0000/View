@@ -109,9 +109,6 @@ class Frame : Any
     }
 
     field prusate String Title { get { return data; } set { data : value; } }
-    field prusate View View { get { return data; } set { data : value; } }
-    field prusate View Over { get { return data; } set { data : value; } }
-    field prusate Type Type { get { return data; } set { data : value; } }
     field prusate Any Out { get { return data; } set { data : value; } }
     field precate Draw Draw { get { return data; } set { data : value; } }
 
