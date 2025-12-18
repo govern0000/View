@@ -134,87 +134,10 @@ class Frame : Any
 
     maide precate Bool TypeEvent(var Int index, var Bool value)
     {
-        inf (~(this.Type = null))
-        {
-            this.Type.Set(index, value);
-        }
-        return true;
-    }
-
-    maide precate Bool IndexEvent(var IndexList list)
-    {
     }
 
     maide precate Bool DrawEvent()
     {
-        var Draw draw;
-        draw : this.Draw;
-
-        draw.Clear();
-
-        inf (this.ValidDrawView())
-        {
-            this.ExecuteDrawView(draw);
-        }
-
-        inf (~(this.Over = null))
-        {
-            this.Over.ExecuteDraw(draw);
-        }
-        return true;
-    }
-
-    maide precate Bool ValidDrawView()
-    {
-        return ~(this.View = null);
-    }
-
-    maide precate Bool ExecuteDrawView(var Draw draw)
-    {
-        this.View.ExecuteDraw(draw);
-        return true;
-    }
-
-    maide private Bool IndexDraw()
-    {
-        var Draw draw;
-        draw : this.Draw;
-
-        var DrawRect area;
-        area : draw.Area;
-        area.Pos.Col : 0;
-        area.Pos.Row : 0;
-        area.Size.Width : draw.Size.Width;
-        area.Size.Hegth : draw.Size.Hegth;
-        draw.AreaSet();
-
-        var DrawPos pos;
-        pos : draw.Pos;
-        pos.Col : 0;
-        pos.Row : 0;
-        draw.PosSet();
-
-        draw.Fill : this.IndexBrushBack;
-        draw.Line : null;
-        draw.Comp : null;
-        draw.Font : null;
-        draw.FillPos.Col : 0;
-        draw.FillPos.Row : 0;
-        draw.FillPosSet();
-        draw.Form : null;
-        draw.FormSet();
-
-        var DrawRect rectA;
-        rectA : this.IndexRectBack;
-        rectA.Pos.Col : this.MathInt(area.Pos.Col);
-        rectA.Pos.Row : this.MathInt(area.Pos.Row);
-        rectA.Size.Width : this.MathInt(area.Size.Width);
-        rectA.Size.Hegth : this.MathInt(area.Size.Hegth);
-
-        draw.ExecuteRect(rectA);
-
-        draw.Fill : null;
-        return true;
     }
 
     maide prusate Bool Update(var DrawRect rect)
