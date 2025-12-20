@@ -7,13 +7,13 @@ class AlignList : Any
         this.Count : this.Array.Count;
         this.Index : 0;
 
-        this.Start : this.AddItem();
+        this.Sta : this.AddItem();
         this.Mid : this.AddItem();
         this.End : this.AddItem();
         return true;
     }
 
-    field prusate Align Start { get { return data; } set { data : value; } }
+    field prusate Align Sta { get { return data; } set { data : value; } }
     field prusate Align Mid { get { return data; } set { data : value; } }
     field prusate Align End { get { return data; } set { data : value; } }
 
