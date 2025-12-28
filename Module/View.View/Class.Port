@@ -50,12 +50,8 @@ View.Draw:0.00.00
 
 [Export]
 View
-Frame
-Screen
 Index
 IndexList
-Grid
-GridChild
 Rect
 Pos
 Size

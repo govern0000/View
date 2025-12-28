@@ -135,10 +135,6 @@ class View : Comp
         {
             this.ModChild(mod);
         }
-        inf (this.FocusField = varField)
-        {
-            this.ModFocus(mod);
-        }
         return true;
     }
 
