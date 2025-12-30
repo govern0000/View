@@ -170,9 +170,9 @@ class Demo : TextAdd
 
         draw.Line : this.DrawInfra.SlashBlack;
 
-        draw.ExecuteText(this.TA(ka), this.AlignList.Start, this.AlignList.Start, false, rectA, rectB);
+        draw.ExecuteText(this.TA(ka), this.AlignList.Sta, this.AlignList.Sta, false, rectA, rectB);
 
-        draw.ExecuteText(this.TA(kb), this.AlignList.Start, this.AlignList.Start, false, rectA, rectC);
+        draw.ExecuteText(this.TA(kb), this.AlignList.Sta, this.AlignList.Sta, false, rectA, rectC);
 
         draw.Line : null;
 
