@@ -73,8 +73,6 @@ View.Draw:0.00.00
     DrawInfra Infra
 View.View:0.00.00
     View View
-    Grid Grid
-    GridChild GridChild
     ViewCount Count
     ViewInfra Infra
 
