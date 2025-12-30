@@ -3,6 +3,7 @@ class Draw : Any
     maide prusate Bool Init()
     {
         base.Init();
+        this.InternIntern : share Intern;
         this.Extern : share Extern;
         this.InternInfra : share InternInfra;
         this.MathInfra : share MathInfra;
@@ -226,6 +227,7 @@ class Draw : Any
     }
 
     field prusate Form Form { get { return data; } set { data : value; } }
+    field private Intern InternIntern { get { return data; } set { data : value; } }
     field private Extern Extern { get { return data; } set { data : value; } }
     field private InternInfra InternInfra { get { return data; } set { data : value; } }
     field precate MathInfra MathInfra { get { return data; } set { data : value; } }
