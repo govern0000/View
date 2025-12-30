@@ -261,7 +261,7 @@ class ViewA : View
         draw.Font : this.Font;
         draw.Line : this.TextSlash;
 
-        draw.ExecuteText(this.Text, this.Demo.AlignList.Mid, this.Demo.AlignList.Start, false, this.DrawRectA, null);
+        draw.ExecuteText(this.Text, this.Demo.AlignList.Mid, this.Demo.AlignList.Sta, false, this.DrawRectA, null);
 
         draw.Line : null;
         draw.Font : null;
