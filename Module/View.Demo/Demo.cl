@@ -186,8 +186,8 @@ class Demo : TextAdd
 
         image.Final();
 
-        this.ConsoleWriteMathValue("TextWed M 1 ", rectB.Size.Width);
-        this.ConsoleWriteMathValue("TextWed M 1024 ", rectC.Size.Width);
+        this.ConsoleWriteMathValue("TextWidth M 1 ", rectB.Size.Width);
+        this.ConsoleWriteMathValue("TextWidth M 1024 ", rectC.Size.Width);
 
         return true;
     }
