@@ -71,6 +71,12 @@ class ViewA : View
 
     maide prusate Bool Final()
     {
+        this.TextSlashFinal(this.TextSlash);
+
+        this.FontFinal(this.Font);
+
+        this.EllipseBrushFinal(this.EllipseBrush);
+
         var DrawBrush brush;
         brush : this.Back;
         var DrawPolate polate;
@@ -79,12 +85,6 @@ class ViewA : View
         polateStop : polate.Stop;
         var DrawPolateLinear polateLinear;
         polateLinear : polate.Linear;
-
-        this.TextSlashFinal(this.TextSlash);
-
-        this.FontFinal(this.Font);
-
-        this.EllipseBrushFinal(this.EllipseBrush);
 
         brush.Final();
 
