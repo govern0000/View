@@ -19,9 +19,8 @@ class ViewA : View
         this.Slash.Size : this.Demo.MathInt(11);
         this.Slash.Init();
 
-        var DrawForm form;
-        form : new DrawForm;
-        form.Init();
+        this.Form : new DrawForm;
+        this.Form.Init();
 
         var DrawPolateLinear polateLinear;
         polateLinear : new DrawPolateLinear;
@@ -56,19 +55,16 @@ class ViewA : View
         brush.Polate : polate;
         brush.Init();
 
+        this.Back : brush;
+
         var String oa;
         oa : "G L 的哈gd@行 o #";
 
-        var TextText textA;
-        textA : this.Demo.TextCreate(oa);
+        this.Text : this.Demo.TextCreate(oa);
 
-        this.Back : brush;
-
-        this.Form : form;
         this.EllipseBrush : this.EllipseBrushCreate();
         this.EllipseRect : this.Demo.DrawInfra.RectCreate(0, 0, this.MathInt(100), this.MathInt(50));
         this.Font : this.FontCreate();
-        this.Text : textA;
         this.TextSlash : this.TextSlashCreate();
         return true;
     }
@@ -108,8 +104,6 @@ class ViewA : View
         k.Final();
 
         this.Brush.Final();
-
-        this.Back.Final();
         return true;
     }
 
