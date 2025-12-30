@@ -19,19 +19,11 @@ class Draw : Any
         this.PosA : this.CreatePosA();
         this.WorldForm : this.CreateWorldForm();
 
-        this.TextCount : 1024;
-
         var Extern extern;
         extern : this.Extern;
 
-        var Int ka;
-        ka : this.TextCount;
-        ka : ka * 4;
-        this.InternTextData : extern.Environ_New(ka);
-
         this.InternText : extern.String_New();
         extern.String_Init(this.InternText);
-        extern.String_ValueSet(this.InternText, this.InternTextData);
         extern.String_CountSet(this.InternText, 0);
 
         this.InternRangeA : this.InternInfra.RangeCreate();
@@ -76,8 +68,6 @@ class Draw : Any
 
         extern.String_Final(this.InternText);
         extern.String_Delete(this.InternText);
-
-        extern.Environ_Delete(this.InternTextData);
 
         this.FinalWorldForm(this.WorldForm);
         return true;
@@ -255,7 +245,6 @@ class Draw : Any
     field private Int InternRectA { get { return data; } set { data : value; } }
     field private Int InternRangeA { get { return data; } set { data : value; } }
     field private Int InternText { get { return data; } set { data : value; } }
-    field private Int InternTextData { get { return data; } set { data : value; } }
 
     maide prusate Bool Start()
     {
