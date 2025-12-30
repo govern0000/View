@@ -65,17 +65,17 @@ class ViewB : View
         var Int angle;
         angle : this.MathInt(20);
 
-        var Int colScale;
-        colScale : this.MathValue(3, 0sn1);
+        var Int horzScale;
+        horzScale : this.MathValue(3, 0sn1);
 
-        var Int rowScale;
-        rowScale : this.MathInt(1);
+        var Int vertScale;
+        vertScale : this.MathInt(1);
 
         this.Form.Reset();
 
         this.Form.Angle(angle);
 
-        this.Form.Scale(colScale, rowScale);
+        this.Form.Scale(horzScale, vertScale);
 
         draw.Form : this.Form;
         draw.FormSet();

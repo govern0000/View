@@ -74,26 +74,14 @@ class Demo : TextAdd
         brush.Color : this.DrawInfra.ColorCreate(0hff, 0, 0hff, 0);
         brush.Init();
 
-        this.View : new View;
-        this.View.Init();
-        this.View.Pos.Col : 100;
-        this.View.Pos.Row : 100;
-        this.View.Size.Width : 1600;
-        this.View.Size.Hegth : 900;
-        this.View.Back : brush;
-
-        this.ViewC : new ViewC;
-        this.ViewC.Demo : this;
-        this.ViewC.Init();
-
         this.ViewA : new ViewA;
         this.ViewA.Demo : this;
         this.ViewA.Init();
-
-        var Grid grid;
-        grid : this.GridCreate();
-
-        this.View.Child : grid;
+        this.ViewA.Pos.Col : 100;
+        this.ViewA.Pos.Row : 100;
+        this.ViewA.Size.Width : 1600;
+        this.ViewA.Size.Hegth : 900;
+        this.ViewA.Back : brush;
 
         var ViewB viewB;
         viewB : new ViewB;
@@ -102,7 +90,7 @@ class Demo : TextAdd
 
         this.ViewA.Child : viewB;
 
-        this.Frame.View : this.View;
+        this.Frame.View : this.ViewA;
         this.Frame.Shown : true;
 
         var Thread thread;
@@ -112,75 +100,13 @@ class Demo : TextAdd
 
         viewB.Final();
 
-        this.GridFinal(grid);
-
         this.ViewA.Final();
-
-        this.ViewC.Final();
 
         brush.Final();
 
         this.Frame.Final();
 
         this.ThreadDrawImageFinal(this.ThreadDrawImage);
-        return true;
-    }
-
-    maide private Grid GridCreate()
-    {
-        var DrawBrush gridBrush;
-        gridBrush : new DrawBrush;
-        gridBrush.Kind : this.BrushKindList.Color;
-        gridBrush.Color : this.DrawInfra.ColorCreate(0h80, 0, 0, 0);
-        gridBrush.Init();
-
-        var Grid grid;
-        grid : new Grid;
-        grid.Init();
-
-        grid.Back : gridBrush;
-
-        var ViewCount colA;
-        colA : new ViewCount;
-        colA.Init();
-        colA.Value : 600;
-        var ViewCount colB;
-        colB : new ViewCount;
-        colB.Init();
-        colB.Value : 600;
-        var ViewCount rowA;
-        rowA : new ViewCount;
-        rowA.Init();
-        rowA.Value : 600;
-        var GridChild childA;
-        childA : new GridChild;
-        childA.Init();
-        childA.View : this.ViewA;
-        childA.Rect.Size.Width : 1;
-        childA.Rect.Size.Hegth : 1;
-        var GridChild childB;
-        childB : new GridChild;
-        childB.Init();
-        childB.View : this.ViewC;
-        childB.Rect.Pos.Col : 1;
-        childB.Rect.Size.Width : 1;
-        childB.Rect.Size.Hegth : 1;
-
-        grid.Pos.Col : 50;
-        grid.Pos.Row : 50;
-        grid.Size.Width : 1500;
-        grid.Size.Hegth : 800;
-        grid.Row.Add(rowA);
-        grid.Col.Add(colA);
-        grid.Col.Add(colB);
-        grid.ChildList.Add(childA);
-        grid.ChildList.Add(childB);
-        return grid;
-    }
-
-    maide private Bool GridFinal(var Grid a)
-    {
-        a.Back.Final();
         return true;
     }
 
