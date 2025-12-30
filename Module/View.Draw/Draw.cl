@@ -25,7 +25,6 @@ class Draw : Any
 
         this.InternText : extern.String_New();
         extern.String_Init(this.InternText);
-        extern.String_CountSet(this.InternText, 0);
 
         this.InternRangeA : this.InternInfra.RangeCreate();
         this.InternRectA : this.InternInfra.RectCreate();
@@ -438,7 +437,7 @@ class Draw : Any
 
     maide prusate Bool ExecuteText(var Text text, var Align colAlign, var Align rowAlign, var Bool wordWrap, var Rect destRect, var Rect boundRect)
     {
-        this.TextSet(text);
+        this.TextStart(text);
 
         this.InternRectSetFromRect(this.InternRectA, destRect);
 
@@ -451,10 +450,12 @@ class Draw : Any
         {
             this.RectSetFromInternRect(boundRect, this.InternRectB);
         }
+        
+        this.TextEnd();
         return true;
     }
 
-    maide private Bool TextSet(var Text text)
+    maide private Bool TextStart(var Text text)
     {
         var Int count;
         count : text.Range.Count;
@@ -469,8 +470,21 @@ class Draw : Any
         dataValue : this.InternIntern.Memory(value);
         dataValue : dataValue + index;
 
-        this.Extern.String_ValueSet(this.InternText, dataValue);
-        this.Extern.String_CountSet(this.InternText, count);
+        var Extern extern;
+        extern : this.Extern;
+
+        extern.String_ValueSet(this.InternText, dataValue);
+        extern.String_CountSet(this.InternText, count);
+        return true;
+    }
+
+    maide private Bool TextEnd()
+    {
+        var Extern extern;
+        extern : this.Extern;
+
+        extern.String_ValueSet(this.InternText, 0);
+        extern.String_CountSet(this.InternText, 0);
         return true;
     }
 
