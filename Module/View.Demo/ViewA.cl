@@ -100,6 +100,73 @@ class ViewA : View
         return true;
     }
 
+    maide private DrawFont FontCreate()
+    {
+        var DrawFont a;
+        a : new DrawFont;
+        a.Name : "Cascadia Mono";
+        a.Size : 20;
+        a.Strong : 400;
+        a.Tenden : true;
+        a.Staline : true;
+        a.Midline : true;
+        a.Endline : true;
+        a.Init();
+        return a;
+    }
+
+    maide private Bool FontFinal(var DrawFont a)
+    {
+        a.Final();
+        return true;
+    }
+
+    maide private DrawSlash TextSlashCreate()
+    {
+        var DrawBrush ka;
+        ka : new DrawBrush;
+        ka.Kind : this.Demo.BrushKindList.Color;
+        ka.Color : this.Demo.DrawInfra.ColorCreate(0hff, 0, 0, 0hff);
+        ka.Init();
+
+        var DrawSlash a;
+        a : new DrawSlash;
+        a.Brush : ka;
+        a.Line : this.Demo.SlashLineList.DashDotDot;
+        a.Cape : this.Demo.SlashCapeList.Round;
+        a.Join : this.Demo.SlashJoinList.Bevel;
+        a.Size : this.MathInt(14);
+        a.Init();
+        return a;
+    }
+
+    maide private Bool TextSlashFinal(var DrawSlash a)
+    {
+        var DrawBrush ka;
+        ka : a.Brush;
+
+        a.Final();
+
+        ka.Final();
+        return true;
+    }
+
+    maide private DrawBrush EllipseBrushCreate()
+    {
+        var DrawBrush a;
+        a : new DrawBrush;
+        a.Kind : this.Demo.BrushKindList.Color;
+        a.Color : this.Demo.DrawInfra.ColorCreate(0hff, 0, 0hff, 0hff);
+        a.Init();
+        return a;
+    }
+
+    maide private Bool EllipseBrushFinal(var DrawBrush a)
+    {
+        a.Final();
+        return true;
+    }
+
     field prusate Demo Demo { get { return data; } set { data : value; } }
     field prusate DrawSlash Slash { get { return data; } set { data : value; } }
     field prusate DrawBrush Brush { get { return data; } set { data : value; } }
