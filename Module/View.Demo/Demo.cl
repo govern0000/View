@@ -68,20 +68,9 @@ class Demo : TextAdd
         type.Demo : this;
         this.Frame.Type : type;
 
-        var DrawBrush brush;
-        brush : new DrawBrush;
-        brush.Kind : this.BrushKindList.Color;
-        brush.Color : this.DrawInfra.ColorCreate(0hff, 0, 0hff, 0);
-        brush.Init();
-
         this.ViewA : new ViewA;
         this.ViewA.Demo : this;
         this.ViewA.Init();
-        this.ViewA.Pos.Col : 100;
-        this.ViewA.Pos.Row : 100;
-        this.ViewA.Size.Width : 1600;
-        this.ViewA.Size.Hegth : 900;
-        this.ViewA.Back : brush;
 
         var ViewB viewB;
         viewB : new ViewB;
@@ -101,8 +90,6 @@ class Demo : TextAdd
         viewB.Final();
 
         this.ViewA.Final();
-
-        brush.Final();
 
         this.Frame.Final();
 

@@ -34,10 +34,49 @@ class ViewA : View
         form : new DrawForm;
         form.Init();
 
-        this.Pos.Col : 0;
-        this.Pos.Row : 0;
-        this.Size.Width : 600;
-        this.Size.Hegth : 400;
+        var DrawPolateLinear polateLinear;
+        polateLinear : new DrawPolateLinear;
+        polateLinear.StartPos : this.Demo.DrawInfra.PosCreate(this.MathInt(300), 0);
+        polateLinear.EndPos : this.Demo.DrawInfra.PosCreate(this.MathInt(300), this.MathInt(400));
+        polateLinear.Init();
+
+        var DrawPolateStop polateStop;
+        polateStop : new DrawPolateStop;
+        polateStop.Count : 3;
+        polateStop.Init();
+
+        var DrawPolateStopPoint aa;
+        aa : new DrawPolateStopPoint;
+        aa.Init();
+
+        this.PolateStopSetPoint(polateStop, aa, 0, 0, this.Demo.DrawInfra.ColorCreate(0hff, 0hff, 0, 0));
+        this.PolateStopSetPoint(polateStop, aa, 1, this.MathValue(1, 0sn1), this.Demo.DrawInfra.ColorCreate(0hff, 0, 0hff, 0));
+        this.PolateStopSetPoint(polateStop, aa, 2, this.MathInt(1), this.Demo.DrawInfra.ColorCreate(0hff, 0, 0, 0hff));
+
+        var DrawPolate polate;
+        polate : new DrawPolate;
+        polate.Kind : this.Demo.PolateKindList.Linear;
+        polate.Linear : polateLinear;
+        polate.Stop : polateStop;
+        polate.Spread : this.Demo.PolateSpreadList.Close;
+        polate.Init();
+
+        var DrawBrush brush;
+        brush : new DrawBrush;
+        brush.Kind : this.Demo.BrushKindList.Polate;
+        brush.Polate : polate;
+        brush.Init();
+
+        var String oa;
+        oa : "G L 的哈gd@行 o #";
+
+        var TextText textA;
+        textA : this.Demo.TextCreate(oa);
+
+        this.Pos.Col : 100;
+        this.Pos.Row : 100;
+        this.Size.Width : 1600;
+        this.Size.Hegth : 900;
         this.Back : brushA;
         this.Slash : slash;
         this.Form : form;
