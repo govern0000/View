@@ -436,11 +436,6 @@ class Draw : Any
 
     maide prusate Bool ExecuteText(var Text text, var Align colAlign, var Align rowAlign, var Bool wordWrap, var Rect destRect, var Rect boundRect)
     {
-        inf (this.TextCount < text.Range.Count)
-        {
-            return false;
-        }
-
         this.TextSet(text);
 
         this.InternRectSetFromRect(this.InternRectA, destRect);
@@ -462,11 +457,17 @@ class Draw : Any
         var Int count;
         count : text.Range.Count;
 
-        var Int dataCount;
-        dataCount : count * 4;
+        var Any value;
+        value : text.Data.Value;
 
-        this.InternInfra.CopyFromByteArray(this.InternTextData, text.Data.Value, 0, dataCount);
+        var Int index;
+        index : text.Range.Index * 4;
 
+        var Int dataValue;
+        dataValue : this.InternIntern.Memory(value);
+        dataValue : dataValue + index;
+
+        this.Extern.String_ValueSet(this.InternText, dataValue);
         this.Extern.String_CountSet(this.InternText, count);
         return true;
     }
