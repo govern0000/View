@@ -4,31 +4,20 @@ class ViewA : View
     {
         base.Init();
 
-        var DrawBrush brushA;
-        brushA : new DrawBrush;
-        brushA.Kind : this.Demo.BrushKindList.Color;
-        brushA.Color : this.Demo.DrawInfra.ColorCreate(0hff, 0, 0, 0hff);
-        brushA.Init();
+        this.Pos.Col : 100;
+        this.Pos.Row : 100;
+        this.Size.Width : 1600;
+        this.Size.Hegth : 900;
 
-        this.Brush : new DrawBrush;
-        this.Brush.Kind : this.Demo.BrushKindList.Color;
-        this.Brush.Color : this.Demo.DrawInfra.ColorCreate(0hff, 0hff, 0hff, 0);
-        this.Brush.Init();
+        this.Brush : this.Demo.DrawInfra.BrushCreate(this.Demo.DrawInfra.ColorCreate(0hff, 0hff, 0hff, 0));
 
-        var DrawBrush slashBrush;
-        slashBrush : new DrawBrush;
-        slashBrush.Kind : this.Demo.BrushKindList.Color;
-        slashBrush.Color : this.Demo.DrawInfra.ColorCreate(0hff, 0hff, 0, 0hff);
-        slashBrush.Init();
-
-        var DrawSlash slash;
-        slash : new DrawSlash;
-        slash.Brush : slashBrush;
-        slash.Line : this.Demo.SlashLineList.DashDotDot;
-        slash.Cape : this.Demo.SlashCapeList.Round;
-        slash.Join : this.Demo.SlashJoinList.Bevel;
-        slash.Size : this.Demo.MathInt(11);
-        slash.Init();
+        this.Slash : new DrawSlash;
+        this.Slash.Brush : this.Demo.DrawInfra.BrushCreate(this.Demo.DrawInfra.ColorCreate(0hff, 0hff, 0, 0hff));
+        this.Slash.Line : this.Demo.SlashLineList.DashDotDot;
+        this.Slash.Cape : this.Demo.SlashCapeList.Round;
+        this.Slash.Join : this.Demo.SlashJoinList.Bevel;
+        this.Slash.Size : this.Demo.MathInt(11);
+        this.Slash.Init();
 
         var DrawForm form;
         form : new DrawForm;
@@ -73,12 +62,8 @@ class ViewA : View
         var TextText textA;
         textA : this.Demo.TextCreate(oa);
 
-        this.Pos.Col : 100;
-        this.Pos.Row : 100;
-        this.Size.Width : 1600;
-        this.Size.Hegth : 900;
-        this.Back : brushA;
-        this.Slash : slash;
+        this.Back : brush;
+
         this.Form : form;
         this.EllipseBrush : this.EllipseBrushCreate();
         this.EllipseRect : this.Demo.DrawInfra.RectCreate(0, 0, this.MathInt(100), this.MathInt(50));
