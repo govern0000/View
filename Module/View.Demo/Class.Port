@@ -40,6 +40,9 @@ System.Entry
     EntryEntry Entry
 Text.Text:0.00.00
     TextAdd Add
+View.Frame:0.00.00
+    ViewFrame Frame
+    Screen Screen
 View.Type:0.00.00
     Type Type
     TypeIndex Index
@@ -70,8 +73,6 @@ View.Draw:0.00.00
     DrawInfra Infra
 View.View:0.00.00
     View View
-    Frame Frame
-    Screen Screen
     Grid Grid
     GridChild GridChild
     ViewCount Count
