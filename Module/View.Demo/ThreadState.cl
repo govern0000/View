@@ -97,7 +97,7 @@ class ThreadState : State
         draw.Font : font;
         draw.Line : slash;
         draw.Comp : this.Demo.CompList.DestOut;
-        draw.ExecuteText(text, this.Demo.AlignList.Start, this.Demo.AlignList.Start, false, rectA, null);
+        draw.ExecuteText(text, this.Demo.AlignList.Sta, this.Demo.AlignList.Sta, false, rectA, null);
 
         draw.End();
 
