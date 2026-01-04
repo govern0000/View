@@ -10,6 +10,8 @@ View frame is not partly or entirely occluded.
 
 View screen can has size event.
 
+View screen pixel size and physical size can be different after size event did trigger.
+
 View frame that was shown is resized when size event did trigger.
 
 View frame has Index event.
