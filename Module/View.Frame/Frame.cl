@@ -18,6 +18,12 @@ class Frame : Any
         return true;
     }
 
+    maide private Bool PrivateSizeEvent()
+    {
+        this.SizeEvent();
+        return true;
+    }
+
     maide prusate Bool Init()
     {
         base.Init();
@@ -89,6 +95,8 @@ class Frame : Any
         }
     }
 
+    field prusate DrawSize Size { get { return data; } set { data : value; } }
+    field prusate DrawSize Dimend { get { return data; } set { data : value; } }
     field private Intern InternIntern { get { return data; } set { data : value; } }
     field private Extern Extern { get { return data; } set { data : value; } }
     field private InternInfra InternInfra { get { return data; } set { data : value; } }
@@ -118,6 +126,10 @@ class Frame : Any
     }
 
     maide precate Bool DrawEvent()
+    {
+    }
+
+    maide precate Bool SizeEvent()
     {
     }
 
