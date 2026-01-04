@@ -8,6 +8,10 @@ View frame does not tag view with the existence of specific form.
 
 View frame is not partly or entirely occluded.
 
+View screen can has size event.
+
+View frame that was shown is resized when size event did trigger.
+
 View frame has Index event.
 View frame IndexEvent maide set fields in index any list that is from param.
 
