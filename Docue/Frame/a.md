@@ -8,39 +8,8 @@ View frame does not tag view with the existence of specific form.
 
 View frame is not partly or entirely occluded.
 
-View frame can has size event.
+View screen can has dimend and orient event.
 
-View frame pixel size and physical size can be different after size event did trigger.
+View frame physical size can be different after dimend event did trigger.
 
-View frame has Index event.
-View frame IndexEvent maide set fields in index any list that is from param.
-
-Class of the index any is Index class in View.View module.
-Class of the index any list is IndexList class in View.View module.
-
-View frame IndexEvent is overide to set index that is present
-when Index alpha button is press.
-
-The maide is call when the button is press.
-
-IndexEvent Index any has fields.
-1 field is IndexA of class TypeIndex.
-1 field is IndexB of class TypeIndex.
-1 field is IndexC of class TypeIndex.
-1 field is IndexD of class TypeIndex.
-1 field is Area of class DrawRect.
-
-IndexEvent set IndexA, IndexB, IndexC, IndexD, Area Col, Area Row, Area Width and Area Hegth in Index any.
-
-IndexA is first type index of the type able.
-IndexB is second type index of the type able.
-IndexC is third type index of the type able.
-IndexD is fourth type index of the type able.
-Area Col is Col field in Area of the type able.
-Area Row is Row field in Area of the type able.
-Area Width is Width field in Area of the type able.
-Area Hegth is Hegth field in Area of the type able.
-
-IndexA is set not null when the index any present a type able.
-
-The IndexList any is passed in from Program module.
+View frame pixel size can be different after orient event did trigger.
