@@ -10,6 +10,6 @@ View frame is not partly or entirely occluded.
 
 View screen can has dimend and orient event.
 
-View frame physical size can be different after dimend event did trigger.
+View frame physical size can be different after screen dimend event did trigger.
 
-View frame pixel size can be different after orient event did trigger.
+View frame pixel size can be different after screen orient event did trigger.
