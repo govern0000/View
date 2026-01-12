@@ -442,7 +442,7 @@ class Draw : Any
         this.InternRectSetFromRect(this.InternRectA, destRect);
 
         var Int wordWrapK;
-        wordWrapK = this.InternInfra.Bool(wordWrap);
+        wordWrapK : this.InternInfra.Bool(wordWrap);
 
         this.Extern.Draw_ExecuteText(this.Intern, this.InternText, colAlign.Index + 1, rowAlign.Index + 1, wordWrapK, this.InternRectA, this.InternRectB);
 
