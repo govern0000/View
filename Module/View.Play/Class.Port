@@ -1,5 +1,5 @@
 [Module]
-Play.Play:0.00.00
+View.Play:0.00.00
 
 [Import]
 System.Infra
