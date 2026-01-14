@@ -4,6 +4,7 @@ class Cursor : Any
     {
         base.Init();
         this.Extern : share Extern;
+        this.InternInfra : share InternInfra;
 
         var Extern extern;
         extern : this.Extern;
@@ -19,6 +20,8 @@ class Cursor : Any
         }
         inf (b)
         {
+            this.InternPoint : this.InternInfra.PosCreate();
+            this.InternInfra.PosSet(this.InternPoint, this.Point.Col, this.Point.Row);
         }
 
         extern.Cursor_Init(this.Intern);
@@ -41,5 +44,7 @@ class Cursor : Any
     field prusate DrawImage Mask { get { return data; } set { data : value; } }
     field prusate DrawPos Point { get { return data; } set { data : value; } }
     field private Extern Extern { get { return data; } set { data : value; } }
+    field private InternInfra InternInfra { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
+    field private Int InternPoint { get { return data; } set { data : value; } }
 }
