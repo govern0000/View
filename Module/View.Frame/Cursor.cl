@@ -57,6 +57,7 @@ class Cursor : Any
         return true;
     }
 
+    field prusate Int Index { get { return data; } set { data : value; } }
     field prusate DrawImage Image { get { return data; } set { data : value; } }
     field prusate DrawImage Mask { get { return data; } set { data : value; } }
     field prusate DrawPos Point { get { return data; } set { data : value; } }
