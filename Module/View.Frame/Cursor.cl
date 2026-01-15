@@ -16,7 +16,7 @@ class Cursor : Any
 
         inf (~b)
         {
-            extern.Cursor_ShapeSet(this.Intern, this.Shape.Intern);
+            extern.Cursor_ShapeSet(this.Intern, this.Shape);
         }
         inf (b)
         {
@@ -57,10 +57,10 @@ class Cursor : Any
         return true;
     }
 
-    field prusate CursorShape Shape { get { return data; } set { data : value; } }
     field prusate DrawImage Image { get { return data; } set { data : value; } }
     field prusate DrawImage Mask { get { return data; } set { data : value; } }
     field prusate DrawPos Point { get { return data; } set { data : value; } }
+    field pronate Int Shape { get { return data; } set { data : value; } }
     field private Extern Extern { get { return data; } set { data : value; } }
     field private InternInfra InternInfra { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
