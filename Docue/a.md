@@ -2,10 +2,10 @@
 
 View is view module list written in Class Lang.
 
-View is Park View. 
+View is Park View.
 
-View is did. 
+View is did.
 
 View has Play.
 
-View is Inter Gene. 
+View is Inter Gene.
