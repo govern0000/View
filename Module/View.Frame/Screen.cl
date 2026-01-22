@@ -67,6 +67,7 @@ class Screen : Any
     field private Extern Extern { get { return data; } set { data : value; } }
     field private InternInfra InternInfra { get { return data; } set { data : value; } }
     field precate DrawInfra DrawInfra { get { return data; } set { data : value; } }
+    field private Int InternDimendState { get { return data; } set { data : value; } }
 
     maide precate Bool DimendEvent()
     {
