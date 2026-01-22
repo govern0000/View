@@ -26,7 +26,9 @@ class Screen : Any
     maide prusate Bool Init()
     {
         base.Init();
+        this.InternIntern : share Intern;
         this.Extern : share Extern;
+        this.InternInfra : share InternInfra;
         this.DrawInfra : share DrawInfra;
 
         var Extern extern;
