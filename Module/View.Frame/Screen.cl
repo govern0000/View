@@ -68,6 +68,20 @@ class Screen : Any
         return true;
     }
 
+    maide prusate Bool Final()
+    {
+        var Extern extern;
+        extern : this.Extern;
+
+        var Int intern;
+        intern : extern.Main_Screen();
+
+        extern.Screen_DimendStateSet(intern, 0);
+
+        this.InternInfra.StateDelete(this.InternDimendState);
+        return true;
+    }
+
     field prusate DrawSize Size { get { return data; } set { data : value; } }
     field prusate DrawSize Dimend { get { return data; } set { data : value; } }
     field prusate State DimendState { get { return data; } set { data : value; } }
