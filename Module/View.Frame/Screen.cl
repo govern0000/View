@@ -31,11 +31,19 @@ class Screen : Any
         this.InternInfra : share InternInfra;
         this.DrawInfra : share DrawInfra;
 
+        var Int ka;
+        ka : this.InternIntern.StateScreenDimendEvent();
+        var Int arg;
+        arg : this.InternIntern.StateArgMemory(this);
+        this.InternDimendState : this.InternInfra.StateCreate(ka, arg);
+
         var Extern extern;
         extern : this.Extern;
 
         var Int intern;
         intern : extern.Main_Screen();
+
+        extern.Screen_DimendStateSet(intern, this.InternDimendState);
 
         var Int sizeK;
         sizeK : extern.Screen_SizeGet(intern);
