@@ -9,8 +9,11 @@ class Screen : Any
         var Extern extern;
         extern : this.Extern;
 
+        var Int intern;
+        intern : extern.Main_Screen();
+
         var Int sizeK;
-        sizeK : extern.Screen_SizeGet(0);
+        sizeK : extern.Screen_SizeGet(intern);
 
         var Int sizeWidth;
         var Int sizeHegth;
@@ -20,7 +23,7 @@ class Screen : Any
         this.Size : this.DrawInfra.SizeCreate(sizeWidth, sizeHegth);
 
         var Int dimendK;
-        dimendK : extern.Screen_DimendGet(0);
+        dimendK : extern.Screen_DimendGet(intern);
 
         var Int dimendWidth;
         var Int dimendHegth;
