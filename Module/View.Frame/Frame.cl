@@ -18,12 +18,6 @@ class Frame : Any
         return true;
     }
 
-    maide private Bool PrivateSizeEvent()
-    {
-        this.SizeEvent();
-        return true;
-    }
-
     maide prusate Bool Init()
     {
         base.Init();
@@ -126,10 +120,6 @@ class Frame : Any
     }
 
     maide precate Bool DrawEvent()
-    {
-    }
-
-    maide precate Bool SizeEvent()
     {
     }
 
