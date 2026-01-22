@@ -2,6 +2,23 @@ class Screen : Any
 {
     maide private Bool PrivateDimendEvent()
     {
+        var Extern extern;
+        extern : this.Extern;
+
+        var Int intern;
+        intern : extern.Main_Screen();
+
+        var Int dimendK;
+        dimendK : extern.Screen_DimendGet(intern);
+
+        var Int width;
+        var Int hegth;
+        width : extern.Size_WidthGet(dimendK);
+        hegth : extern.Size_HegthGet(dimendK);
+
+        this.Dimend.Width : width;
+        this.Dimend.Hegth : hegth;
+
         this.DimendEvent();
         return true;
     }
