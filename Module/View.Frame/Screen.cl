@@ -1,5 +1,11 @@
 class Screen : Any
 {
+    maide private Bool PrivateDimendEvent()
+    {
+        this.DimendEvent();
+        return true;
+    }
+
     maide prusate Bool Init()
     {
         base.Init();
@@ -37,6 +43,16 @@ class Screen : Any
 
     field prusate DrawSize Size { get { return data; } set { data : value; } }
     field prusate DrawSize Dimend { get { return data; } set { data : value; } }
+    field prusate State DimendState { get { return data; } set { data : value; } }
     field private Extern Extern { get { return data; } set { data : value; } }
     field precate DrawInfra DrawInfra { get { return data; } set { data : value; } }
+
+    maide precate Bool DimendEvent()
+    {
+        inf (~(this.DimendState = null))
+        {
+            this.DimendState.Execute();
+        }
+        return true;
+    }
 }
