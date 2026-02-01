@@ -76,19 +76,6 @@ class Play : Any
         }
     }
 
-    field prusate Int Time
-    {
-        get
-        {
-            var Int a;
-            a : this.Extern.Play_TimeGet(this.Intern);
-            return a;
-        }
-        set
-        {
-        }
-    }
-
     field prusate Bool Seek
     {
         get
@@ -98,6 +85,19 @@ class Play : Any
 
             var Bool a;
             a : ~(k = 0);
+            return a;
+        }
+        set
+        {
+        }
+    }
+
+    field prusate Int Time
+    {
+        get
+        {
+            var Int a;
+            a : this.Extern.Play_TimeGet(this.Intern);
             return a;
         }
         set
