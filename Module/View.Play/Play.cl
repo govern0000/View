@@ -35,6 +35,9 @@ class Play : Any
 
         this.Intern : extern.Play_New();
         extern.Play_Init(this.Intern);
+
+        extern.Play_StatusEventStateSet(this.Intern, this.InternStatusEventState);
+        extern.Play_CaseEventStateSet(this.Intern, this.InternCaseEventState);
         return true;
     }
 
@@ -45,6 +48,9 @@ class Play : Any
 
         extern.Play_Final(this.Intern);
         extern.Play_Delete(this.Intern);
+
+        this.InternInfra.StateDelete(this.InternCaseEventState);
+        this.InternInfra.StateDelete(this.InternStatusEventState);
         return true;
     }
 
