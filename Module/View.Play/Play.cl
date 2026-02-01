@@ -39,6 +39,22 @@ class Play : Any
     field prusate Stream Source { get { return data; } set { data : value; } }
     field prusate VideoOut VideoOut { get { return data; } set { data : value; } }
     field prusate AudioOut AudioOut { get { return data; } set { data : value; } }
+
+    field prusate Status Status
+    {
+        get
+        {
+            var Int k;
+            k : this.Extern.Network_StatusGet(this.Intern);
+            var Status a;
+            a : this.PlayStatusList.Get(k);
+            return a;
+        }
+        set
+        {
+        }
+    }
+
     field prusate Case Case
     {
         get
