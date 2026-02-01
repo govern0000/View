@@ -4,6 +4,7 @@ class Play : Any
     {
         base.Init();
         this.Extern : share Extern;
+        this.PlayCaseList : share CaseList;
 
         var Extern extern;
         extern : this.Extern;
