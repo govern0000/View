@@ -16,6 +16,7 @@ class Play : Any
     {
         base.Init();
         this.Extern : share Extern;
+        this.PlayStatusList : share StatusList;
         this.PlayCaseList : share CaseList;
 
         var Extern extern;
@@ -119,6 +120,7 @@ class Play : Any
     }
 
     field private Extern Extern { get { return data; } set { data : value; } }
+    field precate StatusList PlayStatusList { get { return data; } set { data : value; } }
     field precate CaseList PlayCaseList { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
 
