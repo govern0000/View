@@ -26,7 +26,25 @@ class Play : Any
     field prusate Stream Source { get { return data; } set { data : value; } }
     field prusate VideoOut VideoOut { get { return data; } set { data : value; } }
     field prusate AudioOut AudioOut { get { return data; } set { data : value; } }
-    field prusate Case Case { get { return data; } set { data : value; } }
+    field prusate Case Case
+    {
+        get
+        {
+            var Int k;
+            k : this.Extern.Play_CaseGet(this.Intern);
+            inf (k = 0)
+            {
+                return null;
+            }
+            k : k - 1;
+            var Case a;
+            a : this.PlayCaseList.Get(k);
+            return a;
+        }
+        set
+        {
+        }
+    }
 
     field prusate Int Time
     {
@@ -57,6 +75,7 @@ class Play : Any
 
     field private Extern Extern { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
+    field private CaseList PlayCaseList { get { return data; } set { data : value; } }
 
     maide prusate Bool SourceSet()
     {
