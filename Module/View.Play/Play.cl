@@ -45,7 +45,7 @@ class Play : Any
         get
         {
             var Int k;
-            k : this.Extern.Network_StatusGet(this.Intern);
+            k : this.Extern.Play_StatusGet(this.Intern);
             var Status a;
             a : this.PlayStatusList.Get(k);
             return a;
