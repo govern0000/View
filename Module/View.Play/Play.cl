@@ -142,6 +142,8 @@ class Play : Any
     field precate StatusList PlayStatusList { get { return data; } set { data : value; } }
     field precate CaseList PlayCaseList { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
+    field private Int InternCaseEventState { get { return data; } set { data : value; } }
+    field private Int InternStatusEventState { get { return data; } set { data : value; } }
 
     maide prusate Bool SourceSet()
     {
