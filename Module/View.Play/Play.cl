@@ -29,12 +29,15 @@ class Play : Any
 
         var Int ka;
         var Int kb;
+        var Int kc;
         ka : this.InternIntern.StatePlayStatusEvent();
         kb : this.InternIntern.StatePlayCaseEvent();
+        kc : this.InternIntern.StatePlayPosEvent();
         var Int arg;
         arg : this.InternIntern.StateArgMemory(this);
         this.InternStatusEventState : this.InternInfra.StateCreate(ka, arg);
         this.InternCaseEventState : this.InternInfra.StateCreate(kb, arg);
+        this.InternPosEventState : this.InternInfra.StateCreate(kc, arg);
 
         var Extern extern;
         extern : this.Extern;
@@ -44,6 +47,7 @@ class Play : Any
 
         extern.Play_StatusEventStateSet(this.Intern, this.InternStatusEventState);
         extern.Play_CaseEventStateSet(this.Intern, this.InternCaseEventState);
+        extern.Play_PosEventStateSet(this.Intern, this.InternPosEventState);
         return true;
     }
 
@@ -55,6 +59,7 @@ class Play : Any
         extern.Play_Final(this.Intern);
         extern.Play_Delete(this.Intern);
 
+        this.InternInfra.StateDelete(this.InternPosEventState);
         this.InternInfra.StateDelete(this.InternCaseEventState);
         this.InternInfra.StateDelete(this.InternStatusEventState);
         return true;
@@ -148,6 +153,7 @@ class Play : Any
     field precate StatusList PlayStatusList { get { return data; } set { data : value; } }
     field precate CaseList PlayCaseList { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
+    field private Int InternPosEventState { get { return data; } set { data : value; } }
     field private Int InternCaseEventState { get { return data; } set { data : value; } }
     field private Int InternStatusEventState { get { return data; } set { data : value; } }
 
