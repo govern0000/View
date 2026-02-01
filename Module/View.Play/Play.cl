@@ -1,5 +1,11 @@
 class Play : Any
 {
+    maide private Bool PrivateCaseEvent()
+    {
+        this.CaseEvent();
+        return true;
+    }
+
     maide prusate Bool Init()
     {
         base.Init();
