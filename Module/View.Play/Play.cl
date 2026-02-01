@@ -66,6 +66,22 @@ class Play : Any
         }
     }
 
+    field prusate Bool Seek
+    {
+        get
+        {
+            var Int k;
+            k : this.Extern.Play_SeekGet(this.Intern);
+
+            var Bool a;
+            a : ~(k = 0);
+            return a;
+        }
+        set
+        {
+        }
+    }
+
     field prusate Int Pos
     {
         get
