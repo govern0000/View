@@ -26,6 +26,7 @@ class Play : Any
     field prusate Stream Source { get { return data; } set { data : value; } }
     field prusate VideoOut VideoOut { get { return data; } set { data : value; } }
     field prusate AudioOut AudioOut { get { return data; } set { data : value; } }
+    field prusate Case Case { get { return data; } set { data : value; } }
 
     field prusate Int Time
     {
