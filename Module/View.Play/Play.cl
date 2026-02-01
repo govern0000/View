@@ -1,5 +1,11 @@
 class Play : Any
 {
+    maide private Bool PrivateStatusEvent()
+    {
+        this.StatusEvent();
+        return true;
+    }
+
     maide private Bool PrivateCaseEvent()
     {
         this.CaseEvent();
