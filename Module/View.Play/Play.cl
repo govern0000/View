@@ -89,6 +89,10 @@ class Play : Any
         return true;
     }
 
+    maide prusate Bool CaseEvent()
+    {
+    }
+
     maide prusate Bool VideoOutSet()
     {
         var Int k;
