@@ -12,6 +12,12 @@ class Play : Any
         return true;
     }
 
+    maide private Bool PrivatePosEvent()
+    {
+        this.PosEvent();
+        return true;
+    }
+
     maide prusate Bool Init()
     {
         base.Init();
@@ -182,6 +188,10 @@ class Play : Any
     }
 
     maide prusate Bool CaseEvent()
+    {
+    }
+
+    maide prusate Bool PosEvent()
     {
     }
 
