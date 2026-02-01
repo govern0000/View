@@ -15,9 +15,20 @@ class Play : Any
     maide prusate Bool Init()
     {
         base.Init();
+        this.InternIntern : share Intern;
         this.Extern : share Extern;
+        this.InternInfra : share InternInfra;
         this.PlayStatusList : share StatusList;
         this.PlayCaseList : share CaseList;
+
+        var Int ka;
+        var Int kb;
+        ka : this.InternIntern.StatePlayStatusEvent();
+        kb : this.InternIntern.StatePlayCaseEvent();
+        var Int arg;
+        arg : this.InternIntern.StateArgMemory(this);
+        this.InternStatusEventState : this.InternInfra.StateCreate(ka, arg);
+        this.InternCaseEventState : this.InternInfra.StateCreate(kb, arg);
 
         var Extern extern;
         extern : this.Extern;
