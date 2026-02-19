@@ -1,5 +1,5 @@
 [Module]
-View.View:0.00.00
+Alan:View.View:0.00.00
 
 [Import]
 System.Infra
@@ -28,10 +28,10 @@ System.Math
     MathInfra Infra
 System.Text
     TextText Text
-View.Type:0.00.00
+Alan:View.Type:0.00.00
     Type Type
     TypeIndex Index
-View.Draw:0.00.00
+Alan:View.Draw:0.00.00
     Draw Draw
     DrawImage Image
     DrawColor Color
