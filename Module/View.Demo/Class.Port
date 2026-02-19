@@ -1,5 +1,5 @@
 [Module]
-View.Demo:0.00.00
+Alan:View.Demo:0.00.00
 
 [Import]
 System.Infra
@@ -38,16 +38,16 @@ System.Console
     Console Console
 System.Entry
     EntryEntry Entry
-Text.Text:0.00.00
+Alan:Text.Text:0.00.00
     TextAdd Add
-View.Frame:0.00.00
+Alan:View.Frame:0.00.00
     ViewFrame Frame
     Screen Screen
-View.Type:0.00.00
+Alan:View.Type:0.00.00
     Type Type
     TypeIndex Index
     TypeIndexList IndexList
-View.Draw:0.00.00
+Alan:View.Draw:0.00.00
     Draw Draw
     DrawImage Image
     DrawImageRead ImageRead
@@ -71,7 +71,7 @@ View.Draw:0.00.00
     DrawAlignList AlignList
     DrawRect Rect
     DrawInfra Infra
-View.View:0.00.00
+Alan:View.View:0.00.00
     View View
     ViewCount Count
     ViewInfra Infra
