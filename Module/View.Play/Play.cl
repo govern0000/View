@@ -147,6 +147,20 @@ class Play : Any
         }
     }
 
+    field prusate Int Rate
+    {
+        get
+        {
+            var Int a;
+            a : this.Extern.Play_RateGet(this.Intern);
+            return a;
+        }
+        set
+        {
+            this.Extern.Play_RateSet(this.Intern, value);
+        }
+    }
+
     field private Intern InternIntern { get { return data; } set { data : value; } }
     field private Extern Extern { get { return data; } set { data : value; } }
     field private InternInfra InternInfra { get { return data; } set { data : value; } }
