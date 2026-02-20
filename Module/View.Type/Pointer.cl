@@ -12,33 +12,33 @@ class Pointer : Any
 
     field prusate Int Col
     {
-        get { return cast Int(this.Get(this.IndexList.Col)); }
-        set { this.Set(this.IndexList.Col, value); }
+        get { return cast Int(this.Get(this.IndexList.Col.Index)); }
+        set { this.Set(this.IndexList.Col.Index, value); }
     }
     field prusate Int Row
     {
-        get { return cast Int(this.Get(this.IndexList.Row)); }
-        set { this.Set(this.IndexList.Row, value); }
+        get { return cast Int(this.Get(this.IndexList.Row.Index)); }
+        set { this.Set(this.IndexList.Row.Index, value); }
     }
     field prusate Int DeltaCol
     {
-        get { return cast Int(this.Get(this.IndexList.DeltaCol)); }
-        set { this.Set(this.IndexList.DeltaCol, value); }
+        get { return cast Int(this.Get(this.IndexList.DeltaCol.Index)); }
+        set { this.Set(this.IndexList.DeltaCol.Index, value); }
     }
     field prusate Int DeltaRow
     {
-        get { return cast Int(this.Get(this.IndexList.DeltaRow)); }
-        set { this.Set(this.IndexList.DeltaRow, value); }
+        get { return cast Int(this.Get(this.IndexList.DeltaRow.Index)); }
+        set { this.Set(this.IndexList.DeltaRow.Index, value); }
     }
     field prusate Bool ButtonLite
     {
-        get { return cast Bool(this.Get(this.IndexList.ButtonLite)); }
-        set { this.Set(this.IndexList.ButtonLite, value); }
+        get { return cast Bool(this.Get(this.IndexList.ButtonLite.Index)); }
+        set { this.Set(this.IndexList.ButtonLite.Index, value); }
     }
     field prusate Bool ButtonRite
     {
-        get { return cast Bool(this.Get(this.IndexList.ButtonRite)); }
-        set { this.Set(this.IndexList.ButtonRite, value); }
+        get { return cast Bool(this.Get(this.IndexList.ButtonRite.Index)); }
+        set { this.Set(this.IndexList.ButtonRite.Index, value); }
     }
     field precate ListInfra ListInfra { get { return data; } set { data : value; } }
     field precate PointerIndexList IndexList { get { return data; } set { data : value; } }
