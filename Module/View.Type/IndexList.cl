@@ -92,6 +92,11 @@ class IndexList : Any
         return true;
     }
 
+    maide precate Array CreateArray()
+    {
+        return this.ListInfra.ArrayCreate(this.Count);
+    }
+
     field prusate Index AlphaA { get { return data; } set { data : value; } }
     field prusate Index AlphaB { get { return data; } set { data : value; } }
     field prusate Index AlphaC { get { return data; } set { data : value; } }
@@ -172,11 +177,6 @@ class IndexList : Any
     field precate Int AlphaIndex { get { return data; } set { data : value; } }
     field precate Int DigitIndex { get { return data; } set { data : value; } }
     field precate Int InnGroupIndex { get { return data; } set { data : value; } }
-
-    maide precate Array CreateArray()
-    {
-        return this.ListInfra.ArrayCreate(this.Count);
-    }
 
     maide precate Index AddAlphaIndex()
     {
