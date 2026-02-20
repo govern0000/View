@@ -41,7 +41,7 @@ class Pointer : Any
         set { this.Set(this.PointerIndexList.ButtonRite, value); }
     }
     field precate ListInfra ListInfra { get { return data; } set { data : value; } }
-    field precate PointerIndexList PointerIndexList { get { return data; } set { data : value; } }
+    field precate PointerIndexList IndexList { get { return data; } set { data : value; } }
     field precate Array Field { get { return data; } set { data : value; } }
 
     maide precate Bool InitFieldList()
@@ -59,6 +59,14 @@ class Pointer : Any
 
     maide prusate Bool Set(var Int index, var Any value)
     {
+        var Index k;
+        k : this.IndexList.Get(index);
+
+        inf (k = null)
+        {
+            return true;
+        }
+
         var Any ka;
         ka : this.Get(index);
 
@@ -69,11 +77,11 @@ class Pointer : Any
 
         this.Field.Set(index, value);
 
-        this.Event(index, value);
+        this.Event(k, value);
         return true;
     }
 
-    maide prusate Bool Event(var Int index, var Any value)
+    maide prusate Bool Event(var PointerIndex index, var Any value)
     {
     }
 }
