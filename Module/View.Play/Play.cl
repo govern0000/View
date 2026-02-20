@@ -12,6 +12,12 @@ class Play : Any
         return true;
     }
 
+    maide private Bool PrivateRateEvent()
+    {
+        this.RateEvent();
+        return true;
+    }
+
     maide private Bool PrivatePosEvent()
     {
         this.PosEvent();
