@@ -4,18 +4,44 @@ class Pointer : Any
     {
         base.Init();
         this.ListInfra : share ListInfra;
+        this.PointerIndexList : share PointerIndexList;
 
         this.InitFieldList();
         return true;
     }
 
-    field prusate Int Col { get { return this.Get(0); } set { this.Set(0, value); } }
-    field prusate Int Row { get { return this.Get(1); } set { this.Set(1, value); } }
-    field prusate Int DeltaCol { get { return this.Get(2); } set { this.Set(2, value); } }
-    field prusate Int DeltaRow { get { return this.Get(3); } set { this.Set(3, value); } }
-    field prusate Bool ButtonLite { get { return this.Get(4); } set { this.Set(4, value); } }
-    field prusate Bool ButtonRite { get { return this.Get(5); } set { this.Set(5, value); } }
+    field prusate Int Col
+    {
+        get { return cast Int(this.Get(this.PointerIndexList.Col)); }
+        set { this.Set(this.PointerIndexList.Col, value); }
+    }
+    field prusate Int Row
+    {
+        get { return cast Int(this.Get(this.PointerIndexList.Row)); }
+        set { this.Set(this.PointerIndexList.Row, value); }
+    }
+    field prusate Int DeltaCol
+    {
+        get { return cast Int(this.Get(this.PointerIndexList.DeltaCol)); }
+        set { this.Set(this.PointerIndexList.DeltaCol, value); }
+    }
+    field prusate Int DeltaRow
+    {
+        get { return cast Int(this.Get(this.PointerIndexList.DeltaRow)); }
+        set { this.Set(this.PointerIndexList.DeltaRow, value); }
+    }
+    field prusate Bool ButtonLite
+    {
+        get { return cast Bool(this.Get(this.PointerIndexList.ButtonLite)); }
+        set { this.Set(this.PointerIndexList.ButtonLite, value); }
+    }
+    field prusate Bool ButtonRite
+    {
+        get { return cast Bool(this.Get(this.PointerIndexList.ButtonRite)); }
+        set { this.Set(this.PointerIndexList.ButtonRite, value); }
+    }
     field precate ListInfra ListInfra { get { return data; } set { data : value; } }
+    field precate PointerIndexList PointerIndexList { get { return data; } set { data : value; } }
     field precate Array Field { get { return data; } set { data : value; } }
 
     maide precate Bool InitFieldList()
