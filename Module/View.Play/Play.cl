@@ -212,11 +212,11 @@ class Play : Any
     {
     }
 
-    maide prusate Bool PosEvent()
+    maide prusate Bool RateEvent()
     {
     }
 
-    maide prusate Bool RateEvent()
+    maide prusate Bool PosEvent()
     {
     }
 
