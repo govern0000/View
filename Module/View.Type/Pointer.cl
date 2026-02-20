@@ -4,7 +4,7 @@ class Pointer : Any
     {
         base.Init();
         this.ListInfra : share ListInfra;
-        this.PointerIndexList : share PointerIndexList;
+        this.IndexList : share PointerIndexList;
 
         this.InitFieldList();
         return true;
@@ -12,33 +12,33 @@ class Pointer : Any
 
     field prusate Int Col
     {
-        get { return cast Int(this.Get(this.PointerIndexList.Col)); }
-        set { this.Set(this.PointerIndexList.Col, value); }
+        get { return cast Int(this.Get(this.IndexList.Col)); }
+        set { this.Set(this.IndexList.Col, value); }
     }
     field prusate Int Row
     {
-        get { return cast Int(this.Get(this.PointerIndexList.Row)); }
-        set { this.Set(this.PointerIndexList.Row, value); }
+        get { return cast Int(this.Get(this.IndexList.Row)); }
+        set { this.Set(this.IndexList.Row, value); }
     }
     field prusate Int DeltaCol
     {
-        get { return cast Int(this.Get(this.PointerIndexList.DeltaCol)); }
-        set { this.Set(this.PointerIndexList.DeltaCol, value); }
+        get { return cast Int(this.Get(this.IndexList.DeltaCol)); }
+        set { this.Set(this.IndexList.DeltaCol, value); }
     }
     field prusate Int DeltaRow
     {
-        get { return cast Int(this.Get(this.PointerIndexList.DeltaRow)); }
-        set { this.Set(this.PointerIndexList.DeltaRow, value); }
+        get { return cast Int(this.Get(this.IndexList.DeltaRow)); }
+        set { this.Set(this.IndexList.DeltaRow, value); }
     }
     field prusate Bool ButtonLite
     {
-        get { return cast Bool(this.Get(this.PointerIndexList.ButtonLite)); }
-        set { this.Set(this.PointerIndexList.ButtonLite, value); }
+        get { return cast Bool(this.Get(this.IndexList.ButtonLite)); }
+        set { this.Set(this.IndexList.ButtonLite, value); }
     }
     field prusate Bool ButtonRite
     {
-        get { return cast Bool(this.Get(this.PointerIndexList.ButtonRite)); }
-        set { this.Set(this.PointerIndexList.ButtonRite, value); }
+        get { return cast Bool(this.Get(this.IndexList.ButtonRite)); }
+        set { this.Set(this.IndexList.ButtonRite, value); }
     }
     field precate ListInfra ListInfra { get { return data; } set { data : value; } }
     field precate PointerIndexList IndexList { get { return data; } set { data : value; } }
