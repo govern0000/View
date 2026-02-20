@@ -110,6 +110,20 @@ class Play : Any
         }
     }
 
+    field prusate Int Rate
+    {
+        get
+        {
+            var Int a;
+            a : this.Extern.Play_RateGet(this.Intern);
+            return a;
+        }
+        set
+        {
+            this.Extern.Play_RateSet(this.Intern, value);
+        }
+    }
+
     field prusate Bool Seek
     {
         get
@@ -150,20 +164,6 @@ class Play : Any
         set
         {
             this.Extern.Play_PosSet(this.Intern, value);
-        }
-    }
-
-    field prusate Int Rate
-    {
-        get
-        {
-            var Int a;
-            a : this.Extern.Play_RateGet(this.Intern);
-            return a;
-        }
-        set
-        {
-            this.Extern.Play_RateSet(this.Intern, value);
         }
     }
 
