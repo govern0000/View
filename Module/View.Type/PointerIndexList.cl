@@ -29,6 +29,11 @@ class PointerIndexList : Any
     field precate Array Array { get { return data; } set { data : value; } }
     field precate Int Index { get { return data; } set { data : value; } }
 
+    maide prusate PointerIndex Get(var Int index)
+    {
+        return cast PointerIndex(this.Array.Get(index));
+    }
+
     maide precate PointerIndex AddIndex()
     {
         var Int k;
