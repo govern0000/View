@@ -38,12 +38,14 @@ class Play : Any
         var Int kc;
         ka : this.InternIntern.StatePlayStatusEvent();
         kb : this.InternIntern.StatePlayCaseEvent();
-        kc : this.InternIntern.StatePlayPosEvent();
+        kc : this.InternIntern.StatePlayRateEvent();
+        kd : this.InternIntern.StatePlayPosEvent();
         var Int arg;
         arg : this.InternIntern.StateArgMemory(this);
         this.InternStatusEventState : this.InternInfra.StateCreate(ka, arg);
         this.InternCaseEventState : this.InternInfra.StateCreate(kb, arg);
-        this.InternPosEventState : this.InternInfra.StateCreate(kc, arg);
+        this.InternRateEventState : this.InternInfra.StateCreate(kc, arg);
+        this.InternPosEventState : this.InternInfra.StateCreate(kd, arg);
 
         var Extern extern;
         extern : this.Extern;
