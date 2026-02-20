@@ -69,7 +69,7 @@ class Pointer : Any
 
         this.Field.Set(index, value);
 
-        this.Event(k, value);
+        this.Event(index, value);
         return true;
     }
 
