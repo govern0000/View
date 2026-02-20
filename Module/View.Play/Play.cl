@@ -36,6 +36,7 @@ class Play : Any
         var Int ka;
         var Int kb;
         var Int kc;
+        var Int kd;
         ka : this.InternIntern.StatePlayStatusEvent();
         kb : this.InternIntern.StatePlayCaseEvent();
         kc : this.InternIntern.StatePlayRateEvent();
