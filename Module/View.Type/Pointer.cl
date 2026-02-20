@@ -53,7 +53,7 @@ class Pointer : Any
     maide prusate Any Get(var Int index)
     {
         var Any a;
-        a : this.Field.Get(index));
+        a : this.Field.Get(index);
         return a;
     }
 
