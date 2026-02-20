@@ -18,6 +18,11 @@ class PointerIndexList : Any
         return true;
     }
 
+    maide precate Array CreateArray()
+    {
+        return this.ListInfra.ArrayCreate(this.Count);
+    }
+
     field prusate PointerIndex Col { get { return data; } set { data : value; } }
     field prusate PointerIndex Row { get { return data; } set { data : value; } }
     field prusate PointerIndex DeltaCol { get { return data; } set { data : value; } }
