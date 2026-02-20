@@ -168,6 +168,7 @@ class Play : Any
     field precate CaseList PlayCaseList { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
     field private Int InternPosEventState { get { return data; } set { data : value; } }
+    field private Int InternRateEventState { get { return data; } set { data : value; } }
     field private Int InternCaseEventState { get { return data; } set { data : value; } }
     field private Int InternStatusEventState { get { return data; } set { data : value; } }
 
