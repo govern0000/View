@@ -9,7 +9,7 @@ class IndexList : Any
         this.Count : 0h100;
         this.AlphaIndex : 0;
         this.DigitIndex : 0;
-        this.Array : this.ListInfra.ArrayCreate(this.Count);
+        this.Array : this.CreateArray();
 
         this.AlphaA : this.AddAlphaIndex();
         this.AlphaB : this.AddAlphaIndex();
@@ -172,6 +172,11 @@ class IndexList : Any
     field precate Int AlphaIndex { get { return data; } set { data : value; } }
     field precate Int DigitIndex { get { return data; } set { data : value; } }
     field precate Int InnGroupIndex { get { return data; } set { data : value; } }
+
+    maide precate Array CreateArray()
+    {
+        return this.ListInfra.ArrayCreate(this.Count);
+    }
 
     maide precate Index AddAlphaIndex()
     {
