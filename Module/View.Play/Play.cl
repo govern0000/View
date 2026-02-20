@@ -56,6 +56,7 @@ class Play : Any
 
         extern.Play_StatusEventStateSet(this.Intern, this.InternStatusEventState);
         extern.Play_CaseEventStateSet(this.Intern, this.InternCaseEventState);
+        extern.Play_RateEventStateSet(this.Intern, this.InternRateEventState);
         extern.Play_PosEventStateSet(this.Intern, this.InternPosEventState);
         return true;
     }
@@ -69,6 +70,7 @@ class Play : Any
         extern.Play_Delete(this.Intern);
 
         this.InternInfra.StateDelete(this.InternPosEventState);
+        this.InternInfra.StateDelete(this.InternRateEventState);
         this.InternInfra.StateDelete(this.InternCaseEventState);
         this.InternInfra.StateDelete(this.InternStatusEventState);
         return true;
