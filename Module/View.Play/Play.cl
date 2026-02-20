@@ -201,6 +201,10 @@ class Play : Any
     {
     }
 
+    maide prusate Bool RateEvent()
+    {
+    }
+
     maide prusate Bool VideoOutSet()
     {
         var Int k;
