@@ -59,7 +59,7 @@ class Pointer : Any
 
     maide prusate Bool Set(var Int index, var Any value)
     {
-        var Index k;
+        var PointerIndex k;
         k : this.IndexList.Get(index);
 
         inf (k = null)
