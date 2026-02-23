@@ -43,6 +43,7 @@ Alan:Text.Text:0.00.00
 Alan:View.Frame:0.00.00
     ViewFrame Frame
     Screen Screen
+    DimendState DimendState
 Alan:View.Type:0.00.00
     Type Type
     TypeIndex Index
