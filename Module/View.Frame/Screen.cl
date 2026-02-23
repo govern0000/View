@@ -19,6 +19,17 @@ class Screen : Any
         this.Dimend.Width : width;
         this.Dimend.Hegth : hegth;
 
+        var Int sizeK;
+        sizeK : extern.Screen_SizeGet(intern);
+
+        var Int widthK;
+        var Int hegthK;
+        widthK : extern.Size_WidthGet(sizeK);
+        hegthK : extern.Size_HegthGet(sizeK);
+
+        this.Size.Width : widthK;
+        this.Size.Hegth : hegthK;
+
         this.DimendEvent();
         return true;
     }
