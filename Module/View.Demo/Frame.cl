@@ -7,6 +7,8 @@ class Frame : ViewFrame
         this.DrawInfra : share DrawInfra;
         this.Math : share Math;
 
+        this.Screen : this.CreateScreen();
+
         this.MathComp : this.CreateMathComp();
 
         this.Draw : this.CreateDraw();
@@ -21,6 +23,16 @@ class Frame : ViewFrame
         return true;
     }
 
+    maide precate Screen CreateScreen()
+    {
+        var Screen a;
+        a : share Screen;
+        a.DimendState : new DimendState;
+        a.DimendState.Init();
+        a.DimendState.Frame : this;
+        return a;
+    }
+
     maide precate MathComp CreateMathComp()
     {
         var MathComp a;
@@ -31,15 +43,12 @@ class Frame : ViewFrame
 
     maide precate Draw CreateDraw()
     {
-        var Screen screen;
-        screen : share Screen;
-
         var Draw a;
         a : new Draw;
         a.Init();
         a.Out : this.Out;
-        a.Size.Width : screen.Size.Width;
-        a.Size.Hegth : screen.Size.Hegth;
+        a.Size.Width : this.Screen.Size.Width;
+        a.Size.Hegth : this.Screen.Size.Hegth;
         a.SizeSet();
         return a;
     }
@@ -57,6 +66,7 @@ class Frame : ViewFrame
     field precate MathInfra MathInfra { get { return data; } set { data : value; } }
     field precate DrawInfra DrawInfra { get { return data; } set { data : value; } }
     field precate Math Math { get { return data; } set { data : value; } }
+    field precate Screen Screen { get { return data; } set { data : value; } }
 
     maide precate Bool TypeEvent(var Int index, var Bool value)
     {
@@ -83,6 +93,14 @@ class Frame : ViewFrame
 
         draw.End();
 
+        return true;
+    }
+
+    maide prusate Bool Dimend()
+    {
+        this.Draw.Size.Width : this.Screen.Size.Width;
+        this.Draw.Size.Hegth : this.Screen.Size.Hegth;
+        this.Draw.SizeSet();
         return true;
     }
 
