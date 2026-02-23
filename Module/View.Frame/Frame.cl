@@ -142,6 +142,10 @@ class Frame : Any
     {
     }
 
+    maide prusate Bool Dimend()
+    {
+    }
+
     maide prusate Bool Update(var DrawRect rect)
     {
         this.InternInfra.RectSet(this.InternUpdateRect, 
