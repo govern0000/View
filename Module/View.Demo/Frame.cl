@@ -61,8 +61,8 @@ class Frame : ViewFrame
 
     field prusate View View { get { return data; } set { data : value; } }
     field prusate Type Type { get { return data; } set { data : value; } }
-    field precate Draw Draw { get { return data; } set { data : value; } }
-    field precate MathComp MathComp { get { return data; } set { data : value; } }
+    field prusate Draw Draw { get { return data; } set { data : value; } }
+    field prusate MathComp MathComp { get { return data; } set { data : value; } }
     field precate MathInfra MathInfra { get { return data; } set { data : value; } }
     field precate DrawInfra DrawInfra { get { return data; } set { data : value; } }
     field precate Math Math { get { return data; } set { data : value; } }
