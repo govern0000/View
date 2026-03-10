@@ -24,7 +24,7 @@ class Frame : Any
 
             k : ka;
         }
-        
+
         var Any ke;
         ke : valueB;
 
