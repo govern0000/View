@@ -2,6 +2,8 @@ class Pointer : Any
 {
     field prusate Int Col { get { return data; } set { data : value; } }
     field prusate Int Row { get { return data; } set { data : value; } }
+    field prusate Int DeltaCol { get { return data; } set { data : value; } }
+    field prusate Int DeltaRow { get { return data; } set { data : value; } }
     field prusate Bool ButtonLite { get { return data; } set { data : value; } }
     field prusate Bool ButtonRite { get { return data; } set { data : value; } }
 
@@ -15,20 +17,26 @@ class Pointer : Any
 
         inf (kind = 1)
         {
-            this.ButtonLite : cast Bool(valueA);
+            this.DeltaCol : cast Int(valueA);
+            this.DeltaRow : cast Int(valueB);
         }
 
         inf (kind = 2)
         {
+            this.ButtonLite : cast Bool(valueA);
+        }
+
+        inf (kind = 3)
+        {
             this.ButtonRite : cast Bool(valueA);
         }
 
-        this.Event(kind, valueA, valueB);
+        this.Event(kind);
 
         return true;
     }
 
-    maide prusate Bool Event(var Int kind, var Any valueA, var Any valueB)
+    maide prusate Bool Event(var Int kind)
     {
     }
 }
