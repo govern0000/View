@@ -33,6 +33,9 @@ class Pointer : Any
 
         this.Event(kind);
 
+        this.DeltaCol : 0;
+        this.DeltaRow : 0;
+
         return true;
     }
 
