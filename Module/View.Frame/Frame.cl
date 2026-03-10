@@ -12,6 +12,26 @@ class Frame : Any
         return true;
     }
 
+    maide private Bool PrivatePointerEvent(var Int kind, var Int valueA, var Int valueB)
+    {
+        var Any k;
+        k : valueA;
+
+        inf (kind = 2 | kind = 3)
+        {
+            var Bool ka;
+            ka : ~(valueA = 0);
+
+            k : ka;
+        }
+        
+        var Any ke;
+        ke : valueB;
+
+        this.PointerEvent(kind, k, ke);
+        return true;
+    }
+
     maide private Bool PrivateDrawEvent()
     {
         this.DrawEvent();
@@ -114,6 +134,10 @@ class Frame : Any
     }
 
     maide precate Bool TypeEvent(var Int index, var Bool value)
+    {
+    }
+
+    maide precate Bool PointerEvent(var Int kind, var Any valueA, var Any valueB)
     {
     }
 
