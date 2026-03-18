@@ -278,7 +278,7 @@ class Demo : TextAdd
 
     maide prusate Bool PlayTextSet()
     {
-        var FormatArg arg;
+        var TextFormatArg arg;
         arg : this.FormatArg;
 
         arg.Kind : 1;
