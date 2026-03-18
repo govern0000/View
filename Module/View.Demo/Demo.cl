@@ -24,6 +24,8 @@ class Demo : TextAdd
     field prusate ViewA ViewA { get { return data; } set { data : value; } }
     field prusate DrawRect UpdateRect { get { return data; } set { data : value; } }
     field prusate DrawImage ThreadDrawImage { get { return data; } set { data : value; } }
+    field prusate Play Play { get { return data; } set { data : value; } }
+    field prusate DrawImage PlayImage { get { return data; } set { data : value; } }
     field prusate MathInfra MathInfra { get { return data; } set { data : value; } }
     field prusate DrawInfra DrawInfra { get { return data; } set { data : value; } }
     field prusate ViewInfra ViewInfra { get { return data; } set { data : value; } }
@@ -39,6 +41,7 @@ class Demo : TextAdd
     field prusate DrawAlignList AlignList { get { return data; } set { data : value; } }
     field prusate ThreadThis ThreadThis { get { return data; } set { data : value; } }
     field precate MathComp MathComp { get { return data; } set { data : value; } }
+    field private Stream MediaStream { get { return data; } set { data : value; } }
 
     maide prusate Bool Execute()
     {
@@ -75,6 +78,12 @@ class Demo : TextAdd
 
         this.ViewA.Child : viewB;
 
+        this.PlayImage : this.PlayImageCreate();
+
+        this.Play : new Play;
+        this.Play.Demo : this;
+        this.Play.Init();
+
         this.Frame.View : this.ViewA;
         this.Frame.Shown : true;
 
@@ -83,6 +92,10 @@ class Demo : TextAdd
 
         thread.ExecuteMain();
 
+        this.Play.Final();
+
+        this.PlayImageFinal(this.PlayImage);
+
         viewB.Final();
 
         this.ViewA.Final();
@@ -90,6 +103,20 @@ class Demo : TextAdd
         this.Frame.Final();
 
         this.ThreadDrawImageFinal(this.ThreadDrawImage);
+        return true;
+    }
+
+    maide private DrawImage PlayImageCreate()
+    {
+        var DrawImage a;
+        a : new DrawImage;
+        a.Init();
+        return a;
+    }
+
+    maide private Bool PlayImageFinal(var DrawImage a)
+    {
+        a.Final();
         return true;
     }
 
