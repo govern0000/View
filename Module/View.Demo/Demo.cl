@@ -275,4 +275,37 @@ class Demo : TextAdd
         a : this.Math.Value(this.MathComp);
         return a;
     }
+
+    maide prusate Bool PlayTextSet()
+    {
+        var FormatArg arg;
+        arg : this.FormatArg;
+
+        arg.Kind : 1;
+        arg.Value : this.ViewA.PlayPos;
+        arg.Base : 16;
+        arg.AlignLeft : false;
+        arg.FieldWidth : 15;
+        arg.MaxWidth : 15;
+        arg.FillChar : this.Char("0");
+        arg.Form : null;
+
+        var Bool b;
+
+        b : this.Format.ExecuteArgCount(this.FormatArg);
+
+        inf (~b)
+        {
+            return false;
+        }
+
+        b : this.Format.ExecuteArgResult(this.FormatArg, this.ViewA.PlayText);
+
+        inf (~b)
+        {
+            return false;
+        }
+
+        return true;
+    }
 }
