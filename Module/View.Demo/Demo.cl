@@ -56,7 +56,7 @@ class Demo : TextAdd
         this.Frame.Title : "View Demo";
         this.Frame.TitleSet();
 
-        this.UpdateRect : this.DrawInfra.RectCreate(0, 0, this.Screen.Size.Width, this.Screen.Size.Hegth);
+        this.UpdateRect : this.DrawInfra.RectCreate(0, 0, this.Frame.Screen.Size.Width, this.Frame.Screen.Size.Hegth);
 
         var TypeA type;
         type : new TypeA;
