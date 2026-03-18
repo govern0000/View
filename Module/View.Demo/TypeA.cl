@@ -115,6 +115,24 @@ class TypeA : Type
             this.Demo.Play.AudioOut.Volume : k;
         }
 
+        inf (a = d.AlphaG & o)
+        {
+            var Int kaaa;
+            kaaa : this.Demo.Play.Pos;
+
+            var Int kkaa;
+            kkaa : kaaa + 10 * 1000;
+
+            var Int time;
+            time : this.Demo.Play.Time;
+            inf (time < kkaa)
+            {
+                kkaa : time;
+            }
+
+            this.Demo.Play.Pos : kkaa;
+        }
+
         inf (a = d.AlphaM & o)
         {
             var String frameTitle;
