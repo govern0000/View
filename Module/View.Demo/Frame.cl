@@ -25,11 +25,14 @@ class Frame : ViewFrame
 
     maide precate Screen CreateScreen()
     {
+        var DimendState state;
+        state : new DimendState;
+        state.Init();
+        state.Frame : this;
+
         var Screen a;
         a : share Screen;
-        a.DimendState : new DimendState;
-        a.DimendState.Init();
-        a.DimendState.Frame : this;
+        a.DimendState : state;
         return a;
     }
 
