@@ -73,7 +73,7 @@ class TypeA : Type
         var Int scaleFactor;
         scaleFactor : bit <(1, 20);
 
-        inf (a = d.AlphaL & o)
+        inf (a = d.AlphaM & o)
         {
             var String frameTitle;
             frameTitle : this.Demo.AddClear().Add("View Demo ").Add(this.Demo.StringInt(this.TitleIndex)).AddResult();
