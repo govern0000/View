@@ -20,6 +20,10 @@ Alan:View.Draw:0.00.00
 Play
 VideoOut
 AudioOut
+Status
+StatusList
+Case
+CaseList
 
 [Storage]
 
