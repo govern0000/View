@@ -88,6 +88,8 @@ class Frame : Any
 
         this.InternInfra.StateDelete(this.InternDrawState);
 
+        this.InternInfra.StateDelete(this.InternPointerState);
+
         this.InternInfra.StateDelete(this.InternTypeState);
         return true;
     }
