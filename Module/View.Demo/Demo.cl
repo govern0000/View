@@ -17,7 +17,6 @@ class Demo : TextAdd
         this.PolateKindList : share DrawPolateKindList;
         this.PolateSpreadList : share DrawPolateSpreadList;
         this.AlignList : share DrawAlignList;
-        this.Screen : share Screen;
         return true;
     }
 
@@ -38,7 +37,6 @@ class Demo : TextAdd
     field prusate DrawPolateKindList PolateKindList { get { return data; } set { data : value; } }    
     field prusate DrawPolateSpreadList PolateSpreadList { get { return data; } set { data : value; } }    
     field prusate DrawAlignList AlignList { get { return data; } set { data : value; } }
-    field prusate Screen Screen { get { return data; } set { data : value; } }
     field prusate ThreadThis ThreadThis { get { return data; } set { data : value; } }
     field precate MathComp MathComp { get { return data; } set { data : value; } }
 
