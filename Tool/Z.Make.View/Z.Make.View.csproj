@@ -15,6 +15,7 @@
         <ProjectReference Include="../Z.Tool.View.PolateSpreadList/Z.Tool.View.PolateSpreadList.csproj" />
         <ProjectReference Include="../Z.Tool.View.ImageFormatList/Z.Tool.View.ImageFormatList.csproj" />
         <ProjectReference Include="../Z.Tool.View.AlignList/Z.Tool.View.AlignList.csproj" />
+        <ProjectReference Include="../Z.Tool.View.PlayStatusList/Z.Tool.View.PlayStatusList.csproj" />
     </ItemGroup>
 
 </Project>
