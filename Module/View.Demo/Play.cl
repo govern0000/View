@@ -59,6 +59,8 @@ class Play : PlayPlay
     maide prusate Bool PosEvent()
     {
         this.Demo.ViewA.PlayPos : this.Pos;
+
+        this.Demo.PlayTextSet();
         return true;
     }
 }
