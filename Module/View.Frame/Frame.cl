@@ -47,12 +47,15 @@ class Frame : Any
 
         var Int ka;
         var Int kb;
+        var Int kc;
         ka : this.InternIntern.StateFrameTypeEvent();
-        kb : this.InternIntern.StateFrameDrawEvent();
+        kb : this.InternIntern.StateFramePointerEvent();
+        kc : this.InternIntern.StateFrameDrawEvent();
         var Int arg;
         arg : this.InternIntern.StateArgMemory(this);
         this.InternTypeState : this.InternInfra.StateCreate(ka, arg);
-        this.InternDrawState : this.InternInfra.StateCreate(kb, arg);
+        this.InternPointerState : this.InternInfra.StateCreate(kb, arg);
+        this.InternDrawState : this.InternInfra.StateCreate(kc, arg);
 
         this.InternUpdateRect : this.InternInfra.RectCreate();
 
@@ -66,6 +69,7 @@ class Frame : Any
         this.TitleSet();
 
         extern.Frame_TypeStateSet(this.Intern, this.InternTypeState);
+        extern.Frame_PointerStateSet(this.Intern, this.InternPointerState);
         extern.Frame_DrawStateSet(this.Intern, this.InternDrawState);
 
         this.Out : extern.Frame_Out(this.Intern);
@@ -116,6 +120,7 @@ class Frame : Any
     field private Int InternTitle { get { return data; } set { data : value; } }
     field private Int InternUpdateRect { get { return data; } set { data : value; } }
     field private Int InternDrawState { get { return data; } set { data : value; } }
+    field private Int InternPointerState { get { return data; } set { data : value; } }
     field private Int InternTypeState { get { return data; } set { data : value; } }
 
     maide prusate Bool TitleSet()
