@@ -69,7 +69,7 @@ class Frame : ViewFrame
     field precate MathInfra MathInfra { get { return data; } set { data : value; } }
     field precate DrawInfra DrawInfra { get { return data; } set { data : value; } }
     field precate Math Math { get { return data; } set { data : value; } }
-    field precate Screen Screen { get { return data; } set { data : value; } }
+    field prusate Screen Screen { get { return data; } set { data : value; } }
 
     maide precate Bool TypeEvent(var Int index, var Bool value)
     {
