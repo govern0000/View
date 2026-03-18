@@ -6,10 +6,10 @@ public class Gen : SourceGen
     {
         base.Init();
         this.Module = this.S("View.Play");
-        this.ClassName = this.S("PlayStatusList");
+        this.ClassName = this.S("StatusList");
         this.BaseClassName = this.S("Any");
         this.AnyClassName = this.S("Any");
-        this.ItemClassName = this.S("PlayStatus");
+        this.ItemClassName = this.S("Status");
         this.ArrayClassName = this.S("Array");
         this.Export = true;
         this.StatItemClassName = this.S("PlayStatus");
