@@ -55,4 +55,10 @@ class Play : PlayPlay
 
     field prusate Demo Demo { get { return data; } set { data : value; } }
     field private Storage PlayStorage { get { return data; } set { data : value; } }
+
+    maide prusate Bool PosEvent()
+    {
+        this.Demo.ViewA.PlayPos : this.Pos;
+        return true;
+    }
 }
