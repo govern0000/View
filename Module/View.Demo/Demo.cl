@@ -49,7 +49,7 @@ class Demo : TextAdd
 
         this.ExecuteThread();
 
-        this.ExecuteTextWed();
+        this.ExecuteTextWidth();
 
         this.Frame : new Frame;
         this.Frame.Init();
@@ -131,7 +131,7 @@ class Demo : TextAdd
         return true;
     }
 
-    maide private Bool ExecuteTextWed()
+    maide private Bool ExecuteTextWidth()
     {
         var DrawImage image;
         image : this.DrawInfra.ImageCreateSize(this.DrawInfra.SizeCreate(10000, 40));
