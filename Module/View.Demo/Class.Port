@@ -72,6 +72,10 @@ Alan:View.Draw:0.00.00
     DrawAlignList AlignList
     DrawRect Rect
     DrawInfra Infra
+Alan:View.Play:0.00.00
+    PlayPlay Play
+    PlayVideoOut VideoOut
+    PlayAudioOut AudioOut
 Alan:View.View:0.00.00
     View View
     ViewCount Count
