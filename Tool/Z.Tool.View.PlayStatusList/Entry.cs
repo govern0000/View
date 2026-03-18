@@ -1,4 +1,4 @@
-namespace Z.Tool.View.PolateKindList;
+namespace Z.Tool.View.PlayStatusList;
 
 class Entry : EntryEntry
 {
