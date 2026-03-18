@@ -281,6 +281,13 @@ class ViewA : View
 
         draw.ExecuteText(this.Text, this.Demo.AlignList.Mid, this.Demo.AlignList.Sta, false, this.DrawRectA, null);
 
+        this.DrawRectA.Pos.Col : this.MathInt(this.Pos.Col + 750);
+        this.DrawRectA.Pos.Row : this.MathInt(this.Pos.Row + 250);
+        this.DrawRectA.Size.Width : this.MathInt(250);
+        this.DrawRectA.Size.Hegth : this.MathInt(100);
+
+        draw.ExecuteText(this.PlayText, this.Demo.AlignList.Sta, this.Demo.AlignList.Sta, false, this.DrawRectA, null);
+
         draw.Line : null;
         draw.Font : null;
         return true;
