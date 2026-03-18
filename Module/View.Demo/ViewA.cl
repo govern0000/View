@@ -241,8 +241,6 @@ class ViewA : View
 
         draw.ExecuteImage(this.Demo.PlayImage, this.DrawRectA, this.DrawRectB);
 
-#        draw.ExecuteRectRound(this.DrawRectA, this.MathInt(40), this.MathInt(30));
-
         draw.Form : null;
         draw.FormSet();
 
