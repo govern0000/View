@@ -233,10 +233,15 @@ class ViewA : View
 
         this.DrawRectA.Pos.Col : 0;
         this.DrawRectA.Pos.Row : 0;
-        this.DrawRectA.Size.Width : this.MathInt(300);
-        this.DrawRectA.Size.Hegth : this.MathInt(200);
 
-        draw.ExecuteRectRound(this.DrawRectA, this.MathInt(40), this.MathInt(30));
+        this.DrawRectB.Pos.Col : 0;
+        this.DrawRectB.Pos.Row : 0;
+        this.DrawRectB.Size.Width : this.MathInt(this.Demo.PlayImage.Size.Width);
+        this.DrawRectB.Size.Hegth : this.MathInt(this.Demo.PlayImage.Size.Hegth);
+
+        draw.ExecuteImage(this.Demo.PlayImage, this.DrawRectA, this.DrawRectB);
+
+#        draw.ExecuteRectRound(this.DrawRectA, this.MathInt(40), this.MathInt(30));
 
         draw.Form : null;
         draw.FormSet();
