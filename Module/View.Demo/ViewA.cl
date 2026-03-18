@@ -62,6 +62,19 @@ class ViewA : View
 
         this.Text : this.Demo.TextCreate(oa);
 
+        var Data data;
+        data : new Data;
+        data.Count : 4 * 15;
+        data.Init();
+
+        this.PlayText : new Text;
+        this.PlayText.Init();
+        this.PlayText.Data : data;
+        this.PlayText.Range : new Range;
+        this.PlayText.Range.Init();
+        this.PlayText.Range.Index : 0;
+        this.PlayText.Range.Count : 15;
+
         this.EllipseBrush : this.EllipseBrushCreate();
         this.EllipseRect : this.Demo.DrawInfra.RectCreate(0, 0, this.MathInt(100), this.MathInt(50));
         this.Font : this.FontCreate();
@@ -183,6 +196,8 @@ class ViewA : View
     field prusate DrawBrush EllipseBrush { get { return data; } set { data : value; } }
     field prusate DrawFont Font { get { return data; } set { data : value; } }
     field prusate TextText Text { get { return data; } set { data : value; } }
+    field prusate Int PlayPos { get { return data; } set { data : value; } }
+    field prusate TextText PlayText { get { return data; } set { data : value; } }
     field prusate DrawSlash TextSlash { get { return data; } set { data : value; } }
 
     maide precate Bool ExecuteDrawThis(var Draw draw)
