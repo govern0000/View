@@ -34,8 +34,8 @@ class Demo : TextAdd
     field prusate DrawSlashLineList SlashLineList { get { return data; } set { data : value; } }
     field prusate DrawSlashCapeList SlashCapeList { get { return data; } set { data : value; } }
     field prusate DrawSlashJoinList SlashJoinList { get { return data; } set { data : value; } }
-    field prusate DrawPolateKindList PolateKindList { get { return data; } set { data : value; } }    
-    field prusate DrawPolateSpreadList PolateSpreadList { get { return data; } set { data : value; } }    
+    field prusate DrawPolateKindList PolateKindList { get { return data; } set { data : value; } }
+    field prusate DrawPolateSpreadList PolateSpreadList { get { return data; } set { data : value; } }
     field prusate DrawAlignList AlignList { get { return data; } set { data : value; } }
     field prusate ThreadThis ThreadThis { get { return data; } set { data : value; } }
     field precate MathComp MathComp { get { return data; } set { data : value; } }
