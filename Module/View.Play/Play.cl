@@ -54,10 +54,10 @@ class Play : Any
         this.Intern : extern.Play_New();
         extern.Play_Init(this.Intern);
 
-        extern.Play_StatusEventStateSet(this.Intern, this.InternStatusEventState);
-        extern.Play_CaseEventStateSet(this.Intern, this.InternCaseEventState);
-        extern.Play_RateEventStateSet(this.Intern, this.InternRateEventState);
-        extern.Play_PosEventStateSet(this.Intern, this.InternPosEventState);
+        extern.Play_StatusStateSet(this.Intern, this.InternStatusEventState);
+        extern.Play_CaseStateSet(this.Intern, this.InternCaseEventState);
+        extern.Play_RateStateSet(this.Intern, this.InternRateEventState);
+        extern.Play_PosStateSet(this.Intern, this.InternPosEventState);
         return true;
     }
 
