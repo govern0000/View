@@ -67,7 +67,7 @@ class ViewA : View
         data.Count : 4 * 15;
         data.Init();
 
-        this.PlayText : new Text;
+        this.PlayText : new TextText;
         this.PlayText.Init();
         this.PlayText.Data : data;
         this.PlayText.Range : new Range;
