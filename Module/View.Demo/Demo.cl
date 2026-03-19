@@ -66,6 +66,12 @@ class Demo : TextAdd
         type.Demo : this;
         this.Frame.Type : type;
 
+        var PointerA pointer;
+        pointer : new PointerA;
+        pointer.Init();
+        pointer.Demo : this;
+        this.Frame.Pointer : pointer;
+
         this.ViewA : new ViewA;
         this.ViewA.Demo : this;
         this.ViewA.Init();
