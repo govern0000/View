@@ -115,7 +115,7 @@ class Frame : Any
         }
     }
 
-    field precate Int CursorInt
+    field prusate Int Cursor
     {
         get
         {
@@ -154,7 +154,7 @@ class Frame : Any
         return true;
     }
 
-    maide precate Bool CursorIntSet()
+    maide prusate Bool CursorSet()
     {
         this.Extern.Frame_CursorThisSet(this.Intern);
         return true;
