@@ -44,6 +44,7 @@ class Frame : Any
         this.InternIntern : share Intern;
         this.Extern : share Extern;
         this.InternInfra : share InternInfra;
+        this.CursorList : share CursorList;
 
         var Int ka;
         var Int kb;
