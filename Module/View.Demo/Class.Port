@@ -48,6 +48,7 @@ Alan:View.Type:0.00.00
     Type Type
     TypeIndex Index
     TypeIndexList IndexList
+    TypePointer Pointer
 Alan:View.Draw:0.00.00
     Draw Draw
     DrawImage Image

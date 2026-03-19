@@ -64,7 +64,7 @@ class Frame : ViewFrame
 
     field prusate View View { get { return data; } set { data : value; } }
     field prusate Type Type { get { return data; } set { data : value; } }
-    field prusate Pointer Pointer { get { return data; } set { data : value; } }
+    field prusate TypePointer Pointer { get { return data; } set { data : value; } }
     field prusate Draw Draw { get { return data; } set { data : value; } }
     field prusate MathComp MathComp { get { return data; } set { data : value; } }
     field precate MathInfra MathInfra { get { return data; } set { data : value; } }

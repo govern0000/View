@@ -1,4 +1,4 @@
-class PointerA : Pointer
+class PointerA : TypePointer
 {
     field prusate Demo Demo { get { return data; } set { data : value; } }
 
