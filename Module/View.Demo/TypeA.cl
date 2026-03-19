@@ -70,6 +70,16 @@ class TypeA : Type
             b : true;
         }
 
+        inf (a = d.AlphaO & o)
+        {
+            this.Demo.Frame.Cursor : 13;
+        }
+
+        inf (a = d.AlphaP & o)
+        {
+            this.Demo.Frame.Cursor : 10;
+        }
+
         inf (a = d.AlphaE & o)
         {
             this.Demo.Play.Execute();
