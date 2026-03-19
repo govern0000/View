@@ -154,6 +154,12 @@ class Frame : Any
         return true;
     }
 
+    maide prusate Bool CursorSet()
+    {
+        this.Extern.Frame_CursorThisSet(this.Intern);
+        return true;
+    }
+
     maide precate Bool TypeEvent(var Int index, var Bool value)
     {
     }
