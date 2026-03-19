@@ -73,11 +73,13 @@ class TypeA : Type
         inf (a = d.AlphaO & o)
         {
             this.Demo.Frame.Cursor : 13;
+            this.Demo.Frame.CursorSet();
         }
 
         inf (a = d.AlphaP & o)
         {
             this.Demo.Frame.Cursor : 10;
+            this.Demo.Frame.CursorSet();
         }
 
         inf (a = d.AlphaE & o)
