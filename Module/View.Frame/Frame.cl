@@ -115,6 +115,20 @@ class Frame : Any
         }
     }
 
+    field prusate Int Cursor
+    {
+        get
+        {
+            var Int a;
+            a : this.Extern.Frame_CursorGet(this.Intern);
+            return a;
+        }
+        set
+        {
+            this.Extern.Frame_CursorSet(this.Intern, value);
+        }
+    }
+
     field private Intern InternIntern { get { return data; } set { data : value; } }
     field private Extern Extern { get { return data; } set { data : value; } }
     field private InternInfra InternInfra { get { return data; } set { data : value; } }
