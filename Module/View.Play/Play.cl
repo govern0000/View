@@ -30,8 +30,8 @@ class Play : Any
         this.InternIntern : share Intern;
         this.Extern : share Extern;
         this.InternInfra : share InternInfra;
-        this.PlayStatusList : share StatusList;
-        this.PlayCaseList : share CaseList;
+        this.StatusList : share StatusList;
+        this.CaseList : share CaseList;
 
         var Int ka;
         var Int kb;
@@ -87,7 +87,7 @@ class Play : Any
             var Int k;
             k : this.Extern.Play_StatusGet(this.Intern);
             var Status a;
-            a : this.PlayStatusList.Get(k);
+            a : this.StatusList.Get(k);
             return a;
         }
         set
@@ -107,7 +107,7 @@ class Play : Any
             }
             k : k - 1;
             var Case a;
-            a : this.PlayCaseList.Get(k);
+            a : this.CaseList.Get(k);
             return a;
         }
         set
@@ -175,8 +175,8 @@ class Play : Any
     field private Intern InternIntern { get { return data; } set { data : value; } }
     field private Extern Extern { get { return data; } set { data : value; } }
     field private InternInfra InternInfra { get { return data; } set { data : value; } }
-    field precate StatusList PlayStatusList { get { return data; } set { data : value; } }
-    field precate CaseList PlayCaseList { get { return data; } set { data : value; } }
+    field precate StatusList StatusList { get { return data; } set { data : value; } }
+    field precate CaseList CaseList { get { return data; } set { data : value; } }
     field private Int Intern { get { return data; } set { data : value; } }
     field private Int InternPosEventState { get { return data; } set { data : value; } }
     field private Int InternRateEventState { get { return data; } set { data : value; } }
