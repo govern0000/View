@@ -17,6 +17,12 @@ class PointerA : TypePointer
             this.Demo.Frame.Cursor : cursor;
             this.Demo.Frame.CursorSet();
         }
+
+        inf (kind = 4)
+        {
+            this.Demo.Frame.Cursor : 17;
+            this.Demo.Frame.CursorSet();
+        }
         return true;
     }
 }
