@@ -8,7 +8,7 @@ class PointerA : TypePointer
         {
             var Int cursor;
             cursor : 11;
-            
+
             inf (this.ButtonLite)
             {
                 cursor : 9;
