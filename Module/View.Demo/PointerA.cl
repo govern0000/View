@@ -18,6 +18,20 @@ class PointerA : TypePointer
             this.Demo.Frame.CursorSet();
         }
 
+        inf (kind = 3)
+        {
+            var Int cursorAa;
+            cursorAa : 4;
+
+            inf (this.ButtonRite)
+            {
+                cursorAa : 6;
+            }
+
+            this.Demo.Frame.Cursor : cursorAa;
+            this.Demo.Frame.CursorSet();
+        }
+
         inf (kind = 4)
         {
             this.Demo.Frame.Cursor : 17;
